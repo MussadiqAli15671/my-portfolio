@@ -154,21 +154,19 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
+         <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+  <h3>Project Information</h3>
+  <ul id="project-info">
+    <!-- JS will populate this -->
+  </ul>
+</div>
+
+<div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+  <h2 id="project-title"></h2>
+  <p id="project-description"></p>
+</div>
+
+
           </div>
 
         </div>
@@ -216,6 +214,125 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+  const projects = {
+    intellectgate: {
+      title: "IntellectGate",
+      category: "Full Stack Development",
+      client: "Educational Institute, New Zealand",
+      date: "2025",
+      url: "https://www.intellectgate.co.nz/",
+      description: `IntellectGate is a web-based project developed for an educational institute in New Zealand. I worked on this as a Full Stack Developer. I built the frontend from scratch using React and TypeScript, implemented EmailJS to send automated emails to the owner, and integrated dynamic real-time pricing for subjects and courses. I also developed the course enrollment functionality. Additionally, I managed the Git repository, hosted the project on Vercel, purchased the domain from Porkbun, and successfully linked the domain with the hosting platform. On the backend side, I developed the server using Node.js with TypeScript, creating APIs for subjects, news, and other modules. I hosted the backend, frontend, and PostgreSQL database on Railway, ensuring seamless integration and deployment. I also built an admin panel to manage news, subjects, and courses efficiently.`
+    },
+    NCCOTestingPersonnel: {
+      title: "NCCO-Testing Personnel",
+      category: ".NET Core / React-Redux",
+      client: "Learning Management Client",
+      date: "2024",
+      url: "https://stg1995-my.ccocert.org/testing-personnel",
+      description: "LMS platform built with .NET Core API, TypeScript, Power Apps, CRM, Forms, Flows, DataVerse, React-Redux frontend for learning management."
+    },
+    lms_admin: {
+  title: "LMS Admin Panel",
+  category: "Full Stack Development (.NET Core + React TS)",
+  client: "NCCO Training Department",
+  date: "2024–2025",
+  url: "https://kind-grass-00cb5880f.4.azurestaticapps.net/admin",
+  description: `
+    I built a complete Admin Panel for NCCO’s Learning Management System using 
+    React (TypeScript), .NET Core Web API, MSSQL, and Azure services.
+
+    The Admin Panel allows administrators to manage the full learning ecosystem:
+    - Add and manage courses  
+    - Create lessons and upload lesson videos (Azure Blob Storage)  
+    - Create quizzes, questions, and answers  
+    - Add instructors and assign courses to them  
+    - Full CRUD operations with secure API integration  
+    - Dashboard for managing learners, results, and course activities  
+
+    The Admin Panel is optimized with clean architecture, repository pattern, 
+    Entity Framework, and a responsive, efficient React-Redux UI.
+  `
+},
+
+lms: {
+  title: "LMS (Learner Portal)",
+  category: "Frontend + API Integration (React TS + .NET Core)",
+  client: "NCCO Training Department",
+  date: "2024–2025",
+  url: "https://blue-wave-0502b3a0f.4.azurestaticapps.net/",
+  description: `
+    The Learner Portal of the LMS provides users with a complete learning flow.  
+    I developed the frontend using React TypeScript with Redux Toolkit and 
+    integrated it with a .NET Core backend and MSSQL database.
+
+    Key learner features include:
+    - View assigned courses  
+    - Access lessons and watch videos  
+    - Attempt quizzes and receive instant scoring  
+    - Track progress and completion history  
+    - Responsive UI for a seamless learning experience  
+
+    The system is fully connected end-to-end with secured API communication, 
+    optimized backend logic, and Azure-based video delivery.
+  `
+},
+
+
+    halliburtonVendor: {
+    title: "Halliburton (QCDOC-Vendor)",
+    category: "Enterprise System Optimization",
+    client: "Halliburton (QCDOC-Vendor)",
+    date: "2024",
+    url: "https://qcdocvendor.halliburton.com/",
+    description: `Worked as a FullStack developer on Halliburton's QCDOC legacy enterprise system. My responsibilities included optimizing page load time, refactoring legacy WebForms code, cleaning and restructuring Stored Procedures, improving SQL performance, and enhancing multiple modules. I also optimized database queries, reduced load times, and improved overall system stability while keeping the original .NET Framework and MSSQL architecture intact.`
+    },
+    halliburton: {
+      title: "Halliburton QCDOC",
+      category: "Enterprise System",
+      client: "ASU Company",
+      date: "2020",
+      url: "https://qcdoc-dev.corp.halliburton.com/",
+      description: "Legacy system optimization, .Net Framework, MSSQL, StoredProcedures, improved legacy app with .NET Core Web API and Entity Framework."
+    },
+    ai: {
+      title: "AI Business Location Scout",
+      category: "AI / ML",
+      client: "AI Scout Client",
+      date: "2025",
+      url: "#",
+      description: "ML-based suggestion engine using Python, Web Scraping, Automation, Tornado, React js, OpenCV, Matplotlib."
+    },
+    employee: {
+      title: "Employee Management System",
+      category: "Full Stack",
+      client: "Internal Client",
+      date: "2025",
+      url: "#",
+      description: "Employee management system using Django, Python, React js, Google/LinkedIn OAuth, Firebase."
+    }
+  };
+
+  // Get project id from URL hash
+  const projectId = window.location.hash.substring(1) || 'intellectgate';
+  const project = projects[projectId];
+
+  if(project) {
+    // Update title & description
+    document.getElementById('project-title').textContent = project.title;
+    document.getElementById('project-description').textContent = project.description;
+
+    // Update info list
+    document.getElementById('project-info').innerHTML = `
+      <li><strong>Category</strong>: ${project.category}</li>
+      <li><strong>Client</strong>: ${project.client}</li>
+      <li><strong>Project date</strong>: ${project.date}</li>
+      <li><strong>Project URL</strong>: <a href="${project.url}" target="_blank">${project.url}</a></li>
+    `;
+  }
+</script>
+
 
 </body>
 
