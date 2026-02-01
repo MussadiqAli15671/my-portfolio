@@ -1,0 +1,144 @@
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+  background: #020814;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.contact-section .section-title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* ================= INFO CARD ================= */
+
+.info-wrap {
+  background: #08111f;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.6);
+  transition: .4s ease;
+}
+
+.info-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(20,157,221,.4);
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item i {
+  font-size: 24px;
+  color: #149ddd;
+  margin-right: 15px;
+}
+
+.info-item h3 {
+  font-size: 16px;
+}
+
+.info-item p {
+  font-size: 14px;
+  opacity: .8;
+}
+
+/* ================= FORM ================= */
+
+.php-email-form {
+  background: #08111f;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.6);
+  transition: .4s ease;
+}
+
+.php-email-form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(20,157,221,.4);
+}
+
+.php-email-form input,
+.php-email-form textarea {
+  background: #020814;
+  border: 1px solid #1f2a40;
+  color: white;
+}
+
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #149ddd;
+  box-shadow: none;
+}
+
+.php-email-form label {
+  font-size: 14px;
+}
+
+.php-email-form button {
+  background: #149ddd;
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.php-email-form button:hover {
+  background: #0f7fb8;
+}
+
+/* ================= MAP ================= */
+
+.info-wrap iframe {
+  border-radius: 14px;
+  margin-top: 15px;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.whatsapp-float,
+.contact-float {
+  position: fixed;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+  z-index: 999;
+  transition: .3s;
+  color: white;
+}
+
+.whatsapp-float {
+  bottom: 25px;
+  background: #25d366;
+}
+
+.contact-float {
+  bottom: 90px;
+  background: #149ddd;
+}
+
+.whatsapp-float:hover,
+.contact-float:hover {
+  transform: scale(1.1);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .info-wrap,
+  .php-email-form {
+    margin-bottom: 25px;
+  }
+
+}

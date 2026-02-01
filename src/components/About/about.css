@@ -1,0 +1,85 @@
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+  background: #020814;
+  padding: 80px 0;
+  color: white;
+}
+
+.about-section .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-section .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.about-section .section-title p {
+  max-width: 900px;
+  margin: auto;
+  opacity: .85;
+  line-height: 1.7;
+}
+
+/* ================= CONTENT CARD ================= */
+
+.about-content {
+  background: #08111f;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.6);
+  transition: .4s ease;
+  transform-style: preserve-3d;
+}
+
+.about-content:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(20,157,221,.4);
+}
+
+/* ================= TEXT ================= */
+
+.about-content h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 15px;
+  opacity: .85;
+}
+
+.about-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-content ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.about-content ul li i {
+  color: #149ddd;
+  margin-right: 8px;
+}
+
+.about-content strong {
+  color: #149ddd;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .about-content {
+    padding: 25px;
+  }
+
+  .about-content h2 {
+    text-align: center;
+  }
+
+}

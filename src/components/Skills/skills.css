@@ -1,0 +1,80 @@
+.skills3d-section {
+  background: #040b14;
+  padding: 80px 0;
+}
+
+.skills3d-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.skills3d-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.skills3d-title p {
+  opacity: 0.8;
+}
+
+/* ================= CARDS ================= */
+
+.skill3d-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 28px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover 3D */
+
+.skill3d-card:hover {
+  transform: translateY(-12px) rotateX(8deg);
+  box-shadow: 0 25px 40px rgba(20,157,221,0.4);
+  background: rgba(20,157,221,0.15);
+  border: 1px solid #149ddd;
+}
+
+/* Smooth entrance */
+
+.skill3d-card {
+  animation: skillFade 0.6s ease forwards;
+}
+
+@keyframes skillFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .skill3d-card {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .skills3d-title h2 {
+    font-size: 28px;
+  }
+}

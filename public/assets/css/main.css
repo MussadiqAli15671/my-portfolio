@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 
 /* Always position sidebar off-screen by default */
-#header {
+/* #header {
   left: -300px;
   position: fixed;
   top: 0;
@@ -23,12 +23,12 @@
 }
 
 /* When toggled, slide it in */
-body.sidebar-active #header {
+/* body.sidebar-active #header {
   left: 0;
-}
+}  */
 
 /* Toggle button style */
-#sidebarToggle {
+/* #sidebarToggle {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -38,7 +38,7 @@ body.sidebar-active #header {
   color: white;
   font-size: 28px;
   cursor: pointer;
-}
+} */
 
 
 /* Fonts */
@@ -173,7 +173,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
+/* .header {
   color: var(--default-color);
   background-color: var(--background-color);
   position: fixed;
@@ -229,18 +229,17 @@ h6 {
   width: 40px;
   height: 40px;
   transition: 0.3s;
-}
+} */
 
-.header .social-links a:hover {
+/* .header .social-links a:hover {
   color: var(--contrast-color);
   background: var(--accent-color);
-}
+} */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 
   .header~main,
   .header~#footer {
-    /* margin-left: 300px; */
   }
 }
 
@@ -248,8 +247,8 @@ h6 {
   .header {
     left: -100%;
   }
-}
-
+} */
+/* 
 .header.header-show {
   left: 0;
 }
@@ -270,17 +269,17 @@ h6 {
   right: 15px;
   z-index: 9999;
   transition: background-color 0.3s;
-}
+} */
 
-.header .header-toggle:hover {
+/* .header .header-toggle:hover {
   color: var(--contrast-color);
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   display: none;
 }
 
@@ -390,7 +389,7 @@ h6 {
 .navmenu .dropdown>.dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -417,7 +416,7 @@ h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   inset: 0;
   z-index: 999999;
@@ -447,12 +446,12 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
+/* .scroll-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -481,7 +480,7 @@ h6 {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -495,7 +494,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
-.page-title {
+/* .page-title {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 25px 0;
@@ -526,18 +525,26 @@ h6 {
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+
+
 section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  overflow: clip;
+  overflow: visible;
 }
+
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -573,7 +580,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
+/* .hero {
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -647,12 +654,12 @@ section,
   .hero p {
     font-size: 20px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h2 {
+/* .about .content h2 {
   font-weight: 700;
   font-size: 24px;
 }
@@ -677,7 +684,7 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -715,7 +722,7 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
+/* .skills .progress {
   height: 60px;
   display: block;
   background: none;
@@ -747,12 +754,12 @@ section,
   height: 10px;
   transition: 0.9s;
   background-color: var(--accent-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
-.resume .resume-title {
+/* .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
   font-weight: 700;
@@ -806,12 +813,12 @@ section,
   top: 0;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+/* .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
@@ -919,12 +926,12 @@ section,
 
 .portfolio .portfolio-content:hover img {
   transform: scale(1.1);
-}
+} */
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+/* .services .service-item {
   position: relative;
 }
 
@@ -972,7 +979,7 @@ section,
 .services .service-item .description {
   line-height: 24px;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1074,7 +1081,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-wrap {
+/* .contact .info-wrap {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -1170,7 +1177,7 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -1304,3 +1311,23 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* .hero-profile {
+  position: relative !important;
+  width: 260px !important;
+  height: 260px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 5;
+} */
+
+/* Mobile */
+/* @media (max-width: 768px) {
+  .hero-profile {
+    width: 200px !important;
+    height: 200px !important;
+    margin-top: 20px;
+  }
+} */
+
+

@@ -1,0 +1,106 @@
+/* ================= HEADER ================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: rgba(2, 8, 20, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 30px 20px;
+  z-index: 9999;
+  transition: .4s ease;
+  box-shadow: 10px 0 30px rgba(0,0,0,.6);
+}
+
+.header-show {
+  left: 0;
+}
+
+/* ================= TOGGLE ================= */
+
+.header-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #149ddd;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999999;
+}
+
+/* ================= PROFILE ================= */
+
+.profile-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(20,157,221,.6);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* FLOAT */
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ================= NAME ================= */
+
+.sitename {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #149ddd, #7cf3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ================= NAV ================= */
+
+.navmenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navmenu li {
+  margin-bottom: 12px;
+}
+
+.navmenu a {
+  display: block;
+  color: #ccc;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.navmenu a:hover {
+  background: rgba(20,157,221,.2);
+  color: white;
+  transform: translateX(8px);
+}
+
+/* ================= DESKTOP ================= */
+
+@media(min-width:992px){
+
+  .header-toggle {
+    display: block;
+  }
+}

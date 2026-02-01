@@ -1,0 +1,26 @@
+.scroll-top {
+  position: fixed;
+  bottom: 155px; /* ABOVE whatsapp + contact */
+  right: 26px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #149ddd;
+  color: white;
+  font-size: 22px;
+
+  cursor: pointer;
+  z-index: 99999;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.5);
+  transition: .3s ease;
+}
+
+.scroll-top:hover {
+  transform: translateY(-5px);
+  background: #0f7fb8;
+}
