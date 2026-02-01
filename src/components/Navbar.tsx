@@ -6,11 +6,11 @@ const Navbar = () => {
       <i className="bi bi-list" id="toggleIcon" /> {/* Hamburger icon */}
     </button>
     <div className="profile-img">
-      <img src="assets/img/okk.png" alt="Profile" className="img-fluid rounded-circle" style={{width: 160, maxWidth: '100%', height: 155}} />
+      <img src="/my-portfolio/assets/img/okk.png" alt="Profile" className="img-fluid rounded-circle" style={{width: 160, maxWidth: '100%', height: 155}} />
     </div>
     <a href="index.html" className="logo d-flex align-items-center justify-content-center">
       {/* Uncomment the line below if you also wish to use an image logo */}
-      {/* <img src="assets/img/logo.png" alt=""> */}
+      {/* <img src="/my-portfolio/assets/img/logo.png" alt=""> */}
       <h1 className="sitename">Mussadiq Ali</h1>
     </a>
     <div className="social-links text-center">

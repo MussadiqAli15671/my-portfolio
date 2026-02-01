@@ -1,4 +1,4 @@
-// import "../assets/css/main.css";
+// import "..//my-portfolio/assets/css/main.css";
 import ScrollTop from "../components/ScrollTop";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -31,7 +31,7 @@ const Home = () => {
     {/* Hero Section */}
     {/* <section id="hero" class="hero section dark-background">
 
-<img src="assets/img/ok.png" alt="" data-aos="fade-in" class="">
+<img src="/my-portfolio/assets/img/ok.png" alt="" data-aos="fade-in" class="">
 
 <div class="container" data-aos="fade-up" data-aos-delay="100" style="margin-left: 90px;">
   <h2>Mussadiq Ali</h2>
@@ -56,13 +56,13 @@ const Home = () => {
         </div>
         {/* RIGHT IMAGE */}
         <div className="hero-image text-center text-lg-end" style={{position: 'absolute', right: 40, top: '50%', transform: 'translateY(-50%)', width: 360, height: 360, overflow: 'hidden'}}>
-          <img src="assets/img/okk.png" alt="Profile Picture" className="rounded-circle img-fluid" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+          <img src="/my-portfolio/assets/img/okk.png" alt="Profile Picture" className="rounded-circle img-fluid" style={{width: '100%', height: '100%', objectFit: 'cover'}} />
         </div>
       </div>
     </section>
     {/* /Hero Section */}
     {/* About Section */}
-    <section id="about" className="about section" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', */
+    <section id="about" className="about section" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', */
      /* backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', */
      backgroundColor: 'black'}}>
       {/* Section Title */}
@@ -79,7 +79,7 @@ const Home = () => {
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <div className="row gy-4 justify-content-center">
           {/* <div class="col-lg-4">
-      <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+      <img src="/my-portfolio/assets/img/my-profile-img.jpg" class="img-fluid" alt="">
     </div> */}
           <div className="col-lg-12 content" style={{color: 'white'}}>
             <h2 style={{color: 'white'}}>Full Stack &amp; Web Developer.</h2>
@@ -149,7 +149,7 @@ const Home = () => {
       </div>
     </section>{/* /Stats Section */}
     {/* Skills Section */}
-    <section id="skills" className="skills section light-background" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+    <section id="skills" className="skills section light-background" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
 backgroundColor: 'black'}}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
@@ -246,7 +246,7 @@ backgroundColor: 'black'}}>
       </div>
     </section>{/* /Skills Section */}
     {/* Resume Section */}
-    <section id="resume" className="resume section" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+    <section id="resume" className="resume section" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
   backgroundColor: 'black'}}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
@@ -316,7 +316,7 @@ backgroundColor: 'black'}}>
       </div>
     </section>{/* /Resume Section */}
     {/* Portfolio Section */}
-    <section id="portfolio" className="portfolio section light-background" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+    <section id="portfolio" className="portfolio section light-background" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
     color: 'white', backgroundColor: 'black'}}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
@@ -336,11 +336,11 @@ backgroundColor: 'black'}}>
             {/* Routine Planner App */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
               <div className="portfolio-content h-100">
-                <img src="assets/img/routineApp.jpg" className="img-fluid" alt="Routine Planner" />
+                <img src="/my-portfolio/assets/img/routineApp.jpg" className="img-fluid" alt="Routine Planner" />
                 <div className="portfolio-info">
                   <h4>Routine Planner App</h4>
                   <p>.NET Core backend, Stripe, Backblaze B2, CSP, CI/CD, OneSignal Notifications, WebSockets, SignalR, MSSQL</p>
-                  <a href="assets/img/routineApp.jpg" title="Routine Planner" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/routineApp.jpg" title="Routine Planner" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#routine" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -348,11 +348,11 @@ backgroundColor: 'black'}}>
             {/* Refer App */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
               <div className="portfolio-content h-100">
-                <img src="assets/img/refer-app.jpg" className="img-fluid" alt="Refer App" />
+                <img src="/my-portfolio/assets/img/refer-app.jpg" className="img-fluid" alt="Refer App" />
                 <div className="portfolio-info">
                   <h4>Refer App</h4>
                   <p>.NET Core Web API backend, Stripe Multi-Connect, Firebase integration</p>
-                  <a href="assets/img/portfolio/refer.jpg" title="Refer App" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/portfolio/refer.jpg" title="Refer App" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#refer" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -360,11 +360,11 @@ backgroundColor: 'black'}}>
             {/* NCCCO Admin System */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/nccco.jpg" className="img-fluid" alt="NCCCO" />
+                <img src="/my-portfolio/assets/img/nccco.jpg" className="img-fluid" alt="NCCCO" />
                 <div className="portfolio-info">
                   <h4>CCO System</h4>
                   <p>.NET API, React + TypeScript, CRM integration, Power Apps, CRM, Forms, Flows, DataVerse</p>
-                  <a href="assets/img/portfolio/nccco.jpg" title="NCCCO System" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/portfolio/nccco.jpg" title="NCCCO System" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#nccco" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -372,11 +372,11 @@ backgroundColor: 'black'}}>
             {/* CV Matcher */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
               <div className="portfolio-content h-100">
-                <img src="assets/img/cv-matcher1.jpg" className="img-fluid" alt="CV Matcher" />
+                <img src="/my-portfolio/assets/img/cv-matcher1.jpg" className="img-fluid" alt="CV Matcher" />
                 <div className="portfolio-info">
                   <h4>CV Matcher</h4>
                   <p>OpenAI-powered resume matcher built with Next.js and RooCode</p>
-                  <a href="assets/img/portfolio/cvmatcher.jpg" title="CV Matcher" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/portfolio/cvmatcher.jpg" title="CV Matcher" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#ai" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -384,11 +384,11 @@ backgroundColor: 'black'}}>
             {/* Halliburton (QCDOC) */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
               <div className="portfolio-content h-100">
-                <img src="assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
+                <img src="/my-portfolio/assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
                 <div className="portfolio-info">
                   <h4>Halliburton (QCDOC-Vendor)</h4>
                   <p>Legacy system optimization, Enhance page load time, Clean and Implemented StoredProcedures, SQL tuning, WebForms enhancements</p>
-                  <a href="assets/img/portfolio/halliburton.jpg" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/portfolio/halliburton.jpg" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#halliburtonVendor" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -396,11 +396,11 @@ backgroundColor: 'black'}}>
             {/* Halliburton (QCDOC) */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
               <div className="portfolio-content h-100">
-                <img src="assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
+                <img src="/my-portfolio/assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
                 <div className="portfolio-info">
                   <h4>Halliburton (QCDOC-Internal)</h4>
                   <p>Legacy system optimization, .Net Framework, MSSQL, StoredProcedures, SQL Profiler, Inhance the existing legacy application to .NetCore Web API, Entity FrameWork</p>
-                  <a href="assets/img/QCDOCHalliburton.png" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/QCDOCHalliburton.png" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#halliburton" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -408,11 +408,11 @@ backgroundColor: 'black'}}>
             {/* NCCO-Testing Personnel Platform */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/LMS-CCO.jpg" className="img-fluid" alt="LMS System" />
+                <img src="/my-portfolio/assets/img/LMS-CCO.jpg" className="img-fluid" alt="LMS System" />
                 <div className="portfolio-info">
                   <h4>NCCO-Testing Personnel</h4>
                   <p>.NET Core API, TypeScript, Power Apps, CRM, Forms, Flows, DataVerse, React-Redux frontend for learning management</p>
-                  <a href="assets/img/portfolio/lms.jpg" title="LMS Platform" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/portfolio/lms.jpg" title="LMS Platform" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#lms" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -420,11 +420,11 @@ backgroundColor: 'black'}}>
             {/* LMS Admin Panel */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/lmsadmin.jpg" className="img-fluid" alt="LMS Admin Panel" />
+                <img src="/my-portfolio/assets/img/lmsadmin.jpg" className="img-fluid" alt="LMS Admin Panel" />
                 <div className="portfolio-info">
                   <h4>LMS Admin Panel</h4>
                   <p>Full Admin System • React TS, .NET Core, MSSQL, Azure • Courses, Lessons, Quizzes, Instructors</p>
-                  <a href="assets/img/portfolio/lms-admin.jpg" title="LMS Admin Panel" className="glightbox preview-link">
+                  <a href="/my-portfolio/assets/img/portfolio/lms-admin.jpg" title="LMS Admin Panel" className="glightbox preview-link">
                     <i className="bi bi-zoom-in" />
                   </a>
                   <a href="portfolio-details.html#lms_admin" className="details-link">
@@ -436,11 +436,11 @@ backgroundColor: 'black'}}>
             {/* LMS Learner Portal */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/lms.jpg" className="img-fluid" alt="LMS Learner Portal" />
+                <img src="/my-portfolio/assets/img/lms.jpg" className="img-fluid" alt="LMS Learner Portal" />
                 <div className="portfolio-info">
                   <h4>LMS (Learner Portal)</h4>
                   <p>Learner Portal • React TS + .NET Core • Courses, Videos, Quizzes, Progress Tracking</p>
-                  <a href="assets/img/portfolio/lms-portal.jpg" title="LMS Learner Portal" className="glightbox preview-link">
+                  <a href="/my-portfolio/assets/img/portfolio/lms-portal.jpg" title="LMS Learner Portal" className="glightbox preview-link">
                     <i className="bi bi-zoom-in" />
                   </a>
                   <a href="portfolio-details.html#lms" className="details-link">
@@ -452,11 +452,11 @@ backgroundColor: 'black'}}>
             {/* AI Business Location Scout */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
               <div className="portfolio-content h-100">
-                <img src="assets/img/my.png" className="img-fluid" alt="AI Scout" />
+                <img src="/my-portfolio/assets/img/my.png" className="img-fluid" alt="AI Scout" />
                 <div className="portfolio-info">
                   <h4>AI Powered Business Location Scout</h4>
                   <p>ML-based suggestion engine using Python, Web Scraping and Automation, Python, Tornado, React js, Open CV, Matplotlib</p>
-                  <a href="assets/img/my.png" title="AI Scout" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/my.png" title="AI Scout" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#scout" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -464,11 +464,11 @@ backgroundColor: 'black'}}>
             {/* Employee Management System */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/employee.jpg" className="img-fluid" alt="Employee System" />
+                <img src="/my-portfolio/assets/img/employee.jpg" className="img-fluid" alt="Employee System" />
                 <div className="portfolio-info">
                   <h4>Employee Management</h4>
                   <p>DJango, Python, React js, Google/LinkedIn OAuth, Firebase</p>
-                  <a href="assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#employee" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -476,11 +476,11 @@ backgroundColor: 'black'}}>
             {/* Intellect Gate */}
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
               <div className="portfolio-content h-100">
-                <img src="assets/img/intellectgate1.jpg" className="img-fluid" alt="Employee System" />
+                <img src="/my-portfolio/assets/img/intellectgate1.jpg" className="img-fluid" alt="Employee System" />
                 <div className="portfolio-info">
                   <h4>Intellect Gate</h4>
                   <p>React, Typescript, EmailJs, Vercel</p>
-                  <a href="assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+                  <a href="/my-portfolio/assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
                   <a href="portfolio-details.html#intellectgate" className="details-link"><i className="bi bi-link-45deg" /></a>
                 </div>
               </div>
@@ -490,7 +490,7 @@ backgroundColor: 'black'}}>
       </div>
     </section>{/* /Portfolio Section */}
     {/* Services Section */}
-    <section id="services" className="services section" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+    <section id="services" className="services section" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
      backgroundColor: 'black', color: 'white'}}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
@@ -588,7 +588,7 @@ backgroundColor: 'black'}}>
                   <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                   <i className="bi bi-quote quote-icon-right" />
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="Testimonial 1" />
+                <img src="/my-portfolio/assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="Testimonial 1" />
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
@@ -600,7 +600,7 @@ backgroundColor: 'black'}}>
                   <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                   <i className="bi bi-quote quote-icon-right" />
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="Testimonial 2" />
+                <img src="/my-portfolio/assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="Testimonial 2" />
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
@@ -612,7 +612,7 @@ backgroundColor: 'black'}}>
                   <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                   <i className="bi bi-quote quote-icon-right" />
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="Testimonial 3" />
+                <img src="/my-portfolio/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="Testimonial 3" />
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
@@ -624,7 +624,7 @@ backgroundColor: 'black'}}>
                   <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
                   <i className="bi bi-quote quote-icon-right" />
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="Testimonial 4" />
+                <img src="/my-portfolio/assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="Testimonial 4" />
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
@@ -636,7 +636,7 @@ backgroundColor: 'black'}}>
                   <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
                   <i className="bi bi-quote quote-icon-right" />
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="Testimonial 5" />
+                <img src="/my-portfolio/assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="Testimonial 5" />
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
@@ -648,7 +648,7 @@ backgroundColor: 'black'}}>
     </section>
     {/* /Testimonials Section */}
     {/* Contact Section */}
-    <section id="contact" className="contact section" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+    <section id="contact" className="contact section" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
      backgroundColor: 'black', color: 'white'}}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">

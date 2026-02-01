@@ -72,22 +72,22 @@ export default function Portfolio() {
 
 <div className="col-lg-4 col-md-6 portfolio-item backend">
   <div className="portfolio-content">
-  <img src="assets/img/routineApp.jpg" />
+  <img src="/my-portfolio/assets/img/routineApp.jpg" />
   <div className="portfolio-info">
     <h4>Routine Planner</h4>
     <p>.NET Core • Stripe • SignalR</p>
-    <a href="assets/img/routineApp.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/routineApp.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
 
 <div className="col-lg-4 col-md-6 portfolio-item backend">
   <div className="portfolio-content">
-  <img src="assets/img/refer-app.jpg" />
+  <img src="/my-portfolio/assets/img/refer-app.jpg" />
   <div className="portfolio-info">
     <h4>Refer App</h4>
     <p>.NET Core API • Firebase</p>
-    <a href="assets/img/refer-app.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/refer-app.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
@@ -96,11 +96,11 @@ export default function Portfolio() {
 
 <div className="col-lg-4 col-md-6 portfolio-item fullstack">
   <div className="portfolio-content">
-  <img src="assets/img/lms.jpg" />
+  <img src="/my-portfolio/assets/img/lms.jpg" />
   <div className="portfolio-info">
     <h4>LMS Portal (NCCCO)</h4>
     <p>React TS • .NET Core</p>
-    <a href="assets/img/lms.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/lms.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
@@ -110,13 +110,13 @@ export default function Portfolio() {
 <div className="col-lg-4 col-md-6 portfolio-item fullstack">
   <div className="portfolio-content">
 
-    <img src="assets/img/nccco.jpg" />
+    <img src="/my-portfolio/assets/img/nccco.jpg" />
 
     <div className="portfolio-info">
       <h4>MyCCCO System</h4>
       <p>.NET API • React + TypeScript • Flows (For Crone Jobs) • CRM • Power Apps • Dataverse</p>
 
-      <a href="assets/img/nccco.jpg" className="glightbox preview-link">
+      <a href="/my-portfolio/assets/img/nccco.jpg" className="glightbox preview-link">
         <i className="bi bi-zoom-in" />
       </a>
 
@@ -128,33 +128,33 @@ export default function Portfolio() {
 
 <div className="col-lg-4 col-md-6 portfolio-item fullstack">
   <div className="portfolio-content">
-  <img src="assets/img/lmsadmin.jpg" />
+  <img src="/my-portfolio/assets/img/lmsadmin.jpg" />
   <div className="portfolio-info">
     <h4>LMS Admin (NCCCO)</h4>
     <p>React • MSSQL • Azure • CI/CD Pipelines</p>
-    <a href="assets/img/lmsadmin.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/lmsadmin.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
 
 <div className="col-lg-4 col-md-6 portfolio-item fullstack">
   <div className="portfolio-content">
-  <img src="assets/img/employee.jpg" />
+  <img src="/my-portfolio/assets/img/employee.jpg" />
   <div className="portfolio-info">
     <h4>Employee Management</h4>
     <p>Django • React</p>
-    <a href="assets/img/employee.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/employee.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
 
 <div className="col-lg-4 col-md-6 portfolio-item fullstack">
   <div className="portfolio-content">
-  <img src="assets/img/intellectgate1.jpg" />
+  <img src="/my-portfolio/assets/img/intellectgate1.jpg" />
   <div className="portfolio-info">
     <h4>Intellect Gate</h4>
     <p>React TS</p>
-    <a href="assets/img/intellectgate1.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/intellectgate1.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
@@ -163,22 +163,22 @@ export default function Portfolio() {
 
 <div className="col-lg-4 col-md-6 portfolio-item ai">
   <div className="portfolio-content">
-  <img src="assets/img/my.png" />
+  <img src="/my-portfolio/assets/img/my.png" />
   <div className="portfolio-info">
     <h4>AI Business Scout</h4>
     <p>Python • ML</p>
-    <a href="assets/img/my.png" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/my.png" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
 
 <div className="col-lg-4 col-md-6 portfolio-item ai">
   <div className="portfolio-content">
-  <img src="assets/img/cv-matcher1.jpg" />
+  <img src="/my-portfolio/assets/img/cv-matcher1.jpg" />
   <div className="portfolio-info">
     <h4>CV Matcher</h4>
     <p>OpenAI</p>
-    <a href="assets/img/cv-matcher1.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/cv-matcher1.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
@@ -187,22 +187,22 @@ export default function Portfolio() {
 
 <div className="col-lg-4 col-md-6 portfolio-item enterprise">
   <div className="portfolio-content">
-  <img src="assets/img/halliburton.jpg" />
+  <img src="/my-portfolio/assets/img/halliburton.jpg" />
   <div className="portfolio-info">
     <h4>Halliburton QCDOC Vendor</h4>
     <p>Legacy Optimization</p>
-    <a href="assets/img/halliburton.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/halliburton.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
 
 <div className="col-lg-4 col-md-6 portfolio-item enterprise">
   <div className="portfolio-content">
-  <img src="assets/img/halliburton.jpg" />
+  <img src="/my-portfolio/assets/img/halliburton.jpg" />
   <div className="portfolio-info">
     <h4>Halliburton Internal</h4>
     <p>.NET Framework</p>
-    <a href="assets/img/halliburton.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
+    <a href="/my-portfolio/assets/img/halliburton.jpg" className="glightbox"><i className="bi bi-zoom-in" /></a>
   </div>
   </div>
 </div>
@@ -239,7 +239,7 @@ export default function Portfolio() {
 
 
 //   return (
-//      <section id="portfolio" className="portfolio section light-background" style={{/* backgroundImage: 'url("assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
+//      <section id="portfolio" className="portfolio section light-background" style={{/* backgroundImage: 'url("/my-portfolio/assets/img/bg5.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', */
 //     color: 'white', backgroundColor: 'black'}}>
 //       {/* Section Title */}
 //       <div className="container section-title" data-aos="fade-up">
@@ -259,11 +259,11 @@ export default function Portfolio() {
 //             {/* Routine Planner App */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/routineApp.jpg" className="img-fluid" alt="Routine Planner" />
+//                 <img src="/my-portfolio/assets/img/routineApp.jpg" className="img-fluid" alt="Routine Planner" />
 //                 <div className="portfolio-info">
 //                   <h4>Routine Planner App</h4>
 //                   <p>.NET Core backend, Stripe, Backblaze B2, CSP, CI/CD, OneSignal Notifications, WebSockets, SignalR, MSSQL</p>
-//                   <a href="assets/img/routineApp.jpg" title="Routine Planner" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/routineApp.jpg" title="Routine Planner" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#routine" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -271,11 +271,11 @@ export default function Portfolio() {
 //             {/* Refer App */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/refer-app.jpg" className="img-fluid" alt="Refer App" />
+//                 <img src="/my-portfolio/assets/img/refer-app.jpg" className="img-fluid" alt="Refer App" />
 //                 <div className="portfolio-info">
 //                   <h4>Refer App</h4>
 //                   <p>.NET Core Web API backend, Stripe Multi-Connect, Firebase integration</p>
-//                   <a href="assets/img/portfolio/refer.jpg" title="Refer App" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/portfolio/refer.jpg" title="Refer App" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#refer" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -283,11 +283,11 @@ export default function Portfolio() {
 //             {/* NCCCO Admin System */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/nccco.jpg" className="img-fluid" alt="NCCCO" />
+//                 <img src="/my-portfolio/assets/img/nccco.jpg" className="img-fluid" alt="NCCCO" />
 //                 <div className="portfolio-info">
 //                   <h4>CCO System</h4>
 //                   <p>.NET API, React + TypeScript, CRM integration, Power Apps, CRM, Forms, Flows, DataVerse</p>
-//                   <a href="assets/img/portfolio/nccco.jpg" title="NCCCO System" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/portfolio/nccco.jpg" title="NCCCO System" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#nccco" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -295,11 +295,11 @@ export default function Portfolio() {
 //             {/* CV Matcher */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/cv-matcher1.jpg" className="img-fluid" alt="CV Matcher" />
+//                 <img src="/my-portfolio/assets/img/cv-matcher1.jpg" className="img-fluid" alt="CV Matcher" />
 //                 <div className="portfolio-info">
 //                   <h4>CV Matcher</h4>
 //                   <p>OpenAI-powered resume matcher built with Next.js and RooCode</p>
-//                   <a href="assets/img/portfolio/cvmatcher.jpg" title="CV Matcher" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/portfolio/cvmatcher.jpg" title="CV Matcher" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#ai" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -307,11 +307,11 @@ export default function Portfolio() {
 //             {/* Halliburton (QCDOC) */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
+//                 <img src="/my-portfolio/assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
 //                 <div className="portfolio-info">
 //                   <h4>Halliburton (QCDOC-Vendor)</h4>
 //                   <p>Legacy system optimization, Enhance page load time, Clean and Implemented StoredProcedures, SQL tuning, WebForms enhancements</p>
-//                   <a href="assets/img/portfolio/halliburton.jpg" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/portfolio/halliburton.jpg" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#halliburtonVendor" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -319,11 +319,11 @@ export default function Portfolio() {
 //             {/* Halliburton (QCDOC) */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
+//                 <img src="/my-portfolio/assets/img/halliburton.jpg" className="img-fluid" alt="Halliburton QCDOC" />
 //                 <div className="portfolio-info">
 //                   <h4>Halliburton (QCDOC-Internal)</h4>
 //                   <p>Legacy system optimization, .Net Framework, MSSQL, StoredProcedures, SQL Profiler, Inhance the existing legacy application to .NetCore Web API, Entity FrameWork</p>
-//                   <a href="assets/img/QCDOCHalliburton.png" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/QCDOCHalliburton.png" title="Halliburton QCDOC" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#halliburton" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -331,11 +331,11 @@ export default function Portfolio() {
 //             {/* NCCO-Testing Personnel Platform */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/LMS-CCO.jpg" className="img-fluid" alt="LMS System" />
+//                 <img src="/my-portfolio/assets/img/LMS-CCO.jpg" className="img-fluid" alt="LMS System" />
 //                 <div className="portfolio-info">
 //                   <h4>NCCO-Testing Personnel</h4>
 //                   <p>.NET Core API, TypeScript, Power Apps, CRM, Forms, Flows, DataVerse, React-Redux frontend for learning management</p>
-//                   <a href="assets/img/portfolio/lms.jpg" title="LMS Platform" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/portfolio/lms.jpg" title="LMS Platform" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#lms" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -343,11 +343,11 @@ export default function Portfolio() {
 //             {/* LMS Admin Panel */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/lmsadmin.jpg" className="img-fluid" alt="LMS Admin Panel" />
+//                 <img src="/my-portfolio/assets/img/lmsadmin.jpg" className="img-fluid" alt="LMS Admin Panel" />
 //                 <div className="portfolio-info">
 //                   <h4>LMS Admin Panel</h4>
 //                   <p>Full Admin System • React TS, .NET Core, MSSQL, Azure • Courses, Lessons, Quizzes, Instructors</p>
-//                   <a href="assets/img/portfolio/lms-admin.jpg" title="LMS Admin Panel" className="glightbox preview-link">
+//                   <a href="/my-portfolio/assets/img/portfolio/lms-admin.jpg" title="LMS Admin Panel" className="glightbox preview-link">
 //                     <i className="bi bi-zoom-in" />
 //                   </a>
 //                   <a href="portfolio-details.html#lms_admin" className="details-link">
@@ -359,11 +359,11 @@ export default function Portfolio() {
 //             {/* LMS Learner Portal */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/lms.jpg" className="img-fluid" alt="LMS Learner Portal" />
+//                 <img src="/my-portfolio/assets/img/lms.jpg" className="img-fluid" alt="LMS Learner Portal" />
 //                 <div className="portfolio-info">
 //                   <h4>LMS (Learner Portal)</h4>
 //                   <p>Learner Portal • React TS + .NET Core • Courses, Videos, Quizzes, Progress Tracking</p>
-//                   <a href="assets/img/portfolio/lms-portal.jpg" title="LMS Learner Portal" className="glightbox preview-link">
+//                   <a href="/my-portfolio/assets/img/portfolio/lms-portal.jpg" title="LMS Learner Portal" className="glightbox preview-link">
 //                     <i className="bi bi-zoom-in" />
 //                   </a>
 //                   <a href="portfolio-details.html#lms" className="details-link">
@@ -375,11 +375,11 @@ export default function Portfolio() {
 //             {/* AI Business Location Scout */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/my.png" className="img-fluid" alt="AI Scout" />
+//                 <img src="/my-portfolio/assets/img/my.png" className="img-fluid" alt="AI Scout" />
 //                 <div className="portfolio-info">
 //                   <h4>AI Powered Business Location Scout</h4>
 //                   <p>ML-based suggestion engine using Python, Web Scraping and Automation, Python, Tornado, React js, Open CV, Matplotlib</p>
-//                   <a href="assets/img/my.png" title="AI Scout" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/my.png" title="AI Scout" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#scout" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -387,11 +387,11 @@ export default function Portfolio() {
 //             {/* Employee Management System */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/employee.jpg" className="img-fluid" alt="Employee System" />
+//                 <img src="/my-portfolio/assets/img/employee.jpg" className="img-fluid" alt="Employee System" />
 //                 <div className="portfolio-info">
 //                   <h4>Employee Management</h4>
 //                   <p>DJango, Python, React js, Google/LinkedIn OAuth, Firebase</p>
-//                   <a href="assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#employee" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
@@ -399,11 +399,11 @@ export default function Portfolio() {
 //             {/* Intellect Gate */}
 //             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
 //               <div className="portfolio-content h-100">
-//                 <img src="assets/img/intellectgate1.jpg" className="img-fluid" alt="Employee System" />
+//                 <img src="/my-portfolio/assets/img/intellectgate1.jpg" className="img-fluid" alt="Employee System" />
 //                 <div className="portfolio-info">
 //                   <h4>Intellect Gate</h4>
 //                   <p>React, Typescript, EmailJs, Vercel</p>
-//                   <a href="assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
+//                   <a href="/my-portfolio/assets/img/employee.jpg" title="Employee Management" className="glightbox preview-link"><i className="bi bi-zoom-in" /></a>
 //                   <a href="portfolio-details.html#intellectgate" className="details-link"><i className="bi bi-link-45deg" /></a>
 //                 </div>
 //               </div>
