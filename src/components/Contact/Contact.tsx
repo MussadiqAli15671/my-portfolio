@@ -36,9 +36,12 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
 
-      <div className="container section-title" data-aos="fade-up">
+      <div className="container section-title mb-4" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Available for freelance projects and full-time opportunities — let’s build something great together.</p>
+        <p>Available for freelance projects and full-time opportunities — let’s build something great together.
+        <br />
+        Feel free to reach out — I’d be happy to help.
+        </p>
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
