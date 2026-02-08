@@ -16,6 +16,6 @@ import "glightbox/dist/css/glightbox.min.css";
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
-    <App />
+      <App />
   </BrowserRouter>,
 )

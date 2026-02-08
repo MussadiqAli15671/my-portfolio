@@ -7,7 +7,6 @@ import type { Engine } from "tsparticles-engine";
 import "./hero.css";
 
 export default function Hero() {
-
   const typedRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -35,7 +34,6 @@ export default function Hero() {
     <section id="hero" className="hero">
 
       {/* PARTICLES */}
-
       <Particles
         init={particlesInit}
         options={{
@@ -55,7 +53,6 @@ export default function Hero() {
         <div className="row align-items-center">
 
           {/* LEFT */}
-
           <div className="col-lg-7 text-lg-start text-center">
             <h2 className="hero-name">Mussadiq Ali</h2>
 
@@ -63,13 +60,37 @@ export default function Hero() {
               I'm <span ref={typedRef} />
             </p>
 
-            <a href="assets/MussadiqAli__DevCV.pdf" download className="hero-btn">
-              Download CV
+            {/* SERVICE */}
+            <a href="#contact" className="hero-service">
+              For any type of <span>software</span>, <span>website</span>,
+              <span> AI solution</span>, or <span>chatbot</span> — I can build it for you.
+              <strong> Free consultation</strong> →
             </a>
+
+            {/* ACTIONS */}
+            <div className="hero-actions">
+
+              <a
+                href="https://wa.me/923105292088"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-whatsapp"
+              >
+                📱 WhatsApp: +92 310 5292088 — <span>Direct message me</span>
+              </a>
+
+              <a
+                href="assets/MussadiqAli__DevCV.pdf"
+                download
+                className="hero-btn"
+              >
+                Download CV
+              </a>
+
+            </div>
           </div>
 
           {/* RIGHT */}
-
           <div className="col-lg-5 d-flex justify-content-center justify-content-lg-end mt-4 mt-lg-0">
             <img
               src="assets/img/okk.png"
@@ -80,15 +101,6 @@ export default function Hero() {
 
         </div>
       </div>
-
-      {/* SCROLL */}
-
-      {/* <a href="#about" className="scroll-down">
-        <i className="bi bi-chevron-down" />
-      </a> */}
-
     </section>
   );
 }
-
-

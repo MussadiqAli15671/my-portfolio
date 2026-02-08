@@ -15,7 +15,7 @@ const skills = [
   "Machine Learning",
   "Neural Networks",
   "Power Apps",
-  "CI/CD Pipelines",
+  "CI / CD Pipelines",
 ];
 
 export default function Skills() {

@@ -10,16 +10,16 @@
   overflow: hidden;
 }
 
-/* PARTICLES BACKGROUND FIX */
+/* ================= PARTICLES ================= */
 
 #tsparticles {
   position: absolute !important;
   inset: 0;
   z-index: 0;
-  pointer-events: none; /* 🔥 IMPORTANT */
+  pointer-events: none;
 }
 
-/* HERO CONTENT ABOVE PARTICLES */
+/* ================= CONTENT ================= */
 
 .hero .container {
   position: relative;
@@ -47,17 +47,61 @@
   font-weight: 600;
 }
 
-/* ================= BUTTON ================= */
+/* ================= SERVICE LINE ================= */
+
+.hero-service {
+  display: block;
+  margin-top: 16px;
+  font-size: 18px;
+  color: #cfefff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-service strong {
+  color: #7cf3ff;
+}
+
+.hero-service:hover {
+  color: #7cf3ff;
+  transform: translateY(-2px);
+}
+
+/* ================= ACTIONS (WHATSAPP + CV) ================= */
+
+.hero-actions {
+  margin-top: 20px;
+}
+
+.hero-actions .hero-whatsapp {
+  display: block;                /* forces new line */
+  margin-bottom: 18px;
+  font-size: 17px;
+  color: #25d366;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.hero-actions .hero-whatsapp span {
+  color: #a7ffcf;
+}
+
+.hero-actions .hero-whatsapp:hover {
+  color: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* ================= DOWNLOAD BUTTON ================= */
 
 .hero-btn {
-  margin-top: 20px;
+  display: inline-block;
   background: #149ddd;
   color: white;
   padding: 10px 30px;
   border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .hero-btn:hover {
@@ -65,11 +109,9 @@
   transform: translateY(-3px);
 }
 
-/* ================= IMAGE ================= */
+/* ================= PROFILE IMAGE ================= */
 
 .hero-profile {
-  position: relative;
-  z-index: 3;
   width: 280px;
   height: 280px;
   object-fit: cover;
@@ -77,9 +119,8 @@
   background: #020814;
   box-shadow: 0 0 35px rgba(20,157,221,.5);
   animation: float 4s ease-in-out infinite;
+  z-index: 3;
 }
-
-/* FLOAT */
 
 @keyframes float {
   0% { transform: translateY(0); }
@@ -87,35 +128,9 @@
   100% { transform: translateY(0); }
 }
 
-/* ================= SCROLL INDICATOR ================= */
-
-.scroll-down {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  color: #149ddd;
-  animation: bounce 2s infinite;
-  z-index: 3;
-}
-
-@keyframes bounce {
-  0%,20%,50%,80%,100% {
-    transform: translateX(-50%) translateY(0);
-  }
-  40% {
-    transform: translateX(-50%) translateY(-10px);
-  }
-  60% {
-    transform: translateX(-50%) translateY(-5px);
-  }
-}
-
 /* ================= MOBILE ================= */
 
-@media(max-width:768px){
-
+@media (max-width: 768px) {
   .hero-name {
     font-size: 36px;
   }
@@ -127,5 +142,13 @@
   .hero-profile {
     width: 220px;
     height: 220px;
+  }
+
+  .hero-service {
+    font-size: 16px;
+  }
+
+  .hero-actions .hero-whatsapp {
+    font-size: 15px;
   }
 }

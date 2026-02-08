@@ -92,9 +92,10 @@ export default function Contact() {
 
             <form onSubmit={handleSubmit} className="php-email-form">
 
-              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I received your message and will reply shortly." />
+              <input type="hidden" name="_next" value="https://mussadiqali15671.github.io/my-portfolio/#contact" />
 
               <div className="row gy-4">
 
