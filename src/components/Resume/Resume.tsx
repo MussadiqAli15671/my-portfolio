@@ -8,7 +8,7 @@ export default function Resume() {
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <p>
-          A dedicated Full Stack Developer with hands-on experience in building scalable web and mobile backend systems using .NET Core, Python, and React. I've contributed to AI-driven platforms, enterprise solutions, and cloud-integrated apps. Below is a summary of my professional journey, education, and technical skillset.
+          Full Stack Developer (AI) specializing in .NET Core, Python, ML, NLP and React with experience building scalable enterprise solutions and cloud-integrated applications.
         </p>
       </div>
 

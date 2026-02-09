@@ -1,0 +1,30 @@
+{
+  "about": {
+    "title": "About",
+    "intro": "I'm a passionate Full Stack Developer with strong expertise in frontend, backend architecture, API development, and AI. I specialize in building secure and scalable systems using .NET Core, Python, React, TypeScript, and SQL/NoSQL databases.",
+
+    "roleTitle": "Full Stack, AI & Web Developer",
+
+    "italicText": "A dedicated Full Stack Developer with experience across frontend, backend, cloud deployment, and AI-driven systems, focused on building scalable, secure, and high-performance applications.",
+
+    "para1": "Over the past few years, I’ve delivered enterprise platforms, certification systems, and e-commerce applications, contributing across the entire development lifecycle — from UI implementation and API architecture to database design and production deployments.",
+
+    "para2": "I’ve worked extensively on React and TypeScript frontends, .NET Core and Python backends, and cloud deployments on Azure, including CI/CD pipelines and infrastructure automation. My experience also includes integrating real-time systems, secure payment gateways (Stripe), and cloud storage solutions (Backblaze, Firebase).",
+
+    "para3": "I’ve also built AI-powered tools and web scrapers using Selenium and Playwright to extract business-critical data and support intelligent automation workflows.",
+
+    "labels": {
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "phone": "Phone",
+      "degree": "Degree",
+      "email": "Email",
+      "freelance": "Freelance"
+    },
+
+    "degreeValue": "BS Computer Science",
+    "freelanceValue": "Available",
+
+    "closing": "From building admin dashboards to developing intelligent AI platforms and scalable APIs, I always prioritize performance, security, and user-friendly design in every project."
+  }
+}

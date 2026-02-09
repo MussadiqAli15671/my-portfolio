@@ -2,9 +2,14 @@ import "./skills.css";
 
 const skills = [
   ".NET Core / C#",
-  "Entity Framework / LINQ",
-  "JavaScript",
+  "Entity Framework / LINQ",  
   "React / TypeScript",
+  "AI Solutions",
+  "Chatbots",
+  "NLP",
+  "Machine Learning",
+  "Neural Networks",
+  "JavaScript",
   "Dataverse",
   "GitHub",
   "Azure",

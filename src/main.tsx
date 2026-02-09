@@ -11,7 +11,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.min.css";
-// import "swiper/css";
+import "./i18n";
 
 
 createRoot(document.getElementById('root')!).render(

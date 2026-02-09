@@ -49,12 +49,13 @@ export default function Portfolio() {
 
       <div className="container">
 
-        <div className="portfolio-title">
-          <h2>Portfolio</h2>
-          <p>
-            Backend APIs, Full-Stack Systems, AI Projects and Enterprise Solutions.
-          </p>
-        </div>
+       <div className="portfolio-title">
+        <h2>Projects</h2>
+        <p>
+          A collection of real-world projects I have worked on, including backend APIs,
+          full-stack applications, AI solutions, and enterprise-level systems.
+        </p>
+      </div>
 
         {/* FILTERS */}
 

@@ -1,5 +1,5 @@
-// import { useEffect, useState } from "react";
-// import AOS from "aos";
+import { useEffect } from "react";
+import AOS from "aos";
 
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -11,21 +11,16 @@ import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollTop from "./components/ScrollTop";
-// import Preloader from "./components/Preloader";
 
 export default function App() {
 
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   AOS.init({ once: true, duration: 800 });
-
-    // const timer = setTimeout(() => setLoading(false), 1200);
-
-    // return () => clearTimeout(timer);
-  // }, []);
-
-  // if (loading) return <Preloader />;
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 800,
+      offset: 100,
+    });
+  }, []);
 
   return (
     <>

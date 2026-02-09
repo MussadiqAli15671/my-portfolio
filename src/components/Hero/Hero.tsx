@@ -63,7 +63,7 @@ export default function Hero() {
             {/* SERVICE */}
             <a href="#contact" className="hero-service">
               For any type of <span>software</span>, <span>website</span>,
-              <span> AI solution</span>, or <span>chatbot</span> — I can build it for you.
+              <span> AI solution</span>, or <span>chatbot</span> — I can build it for you.<br/>
               <strong> Free consultation</strong> →
             </a>
 
