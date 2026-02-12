@@ -152,3 +152,71 @@
     font-size: 15px;
   }
 }
+
+/* Language switcher container positioning */
+.hero-language {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  z-index: 10;
+}
+
+/* RTL support for container */
+html[dir="rtl"] .hero-language {
+  right: auto;
+  left: 30px;
+}
+
+/* Wrapper: hint + buttons in one row */
+.language-switcher-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* RTL layout */
+html[dir="rtl"] .language-switcher-wrapper {
+  flex-direction: row-reverse;
+}
+
+/* Language buttons group */
+.language-switcher {
+  display: flex;
+  gap: 8px;
+}
+
+/* Buttons */
+.language-switcher button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #149ddd;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.language-switcher button:hover {
+  background: #149ddd;
+}
+
+/* Active language */
+.language-switcher button.active {
+  background: #149ddd;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(20, 157, 221, 0.6);
+}
+
+/* Hint text (LEFT side of buttons) */
+.hero .language-hint {
+  color: #FFFFFF;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  user-select: none;
+  opacity: 0.85;
+  font-style: italic;
+  font-weight: 400; /* override hero span weight */
+}

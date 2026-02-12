@@ -1,38 +1,64 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import type { Engine } from "tsparticles-engine";
-
 import "./hero.css";
+import LanguageSwitcher from "../LanguageSwitcher";
+import { Helmet } from "react-helmet-async";
 
 export default function Hero() {
   const typedRef = useRef<HTMLSpanElement>(null);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const typed = new Typed(typedRef.current!, {
-      strings: [
-        "Full Stack Developer",
-        "AI & Machine Learning Engineer",
-        ".NET Core Specialist",
-        "React + TypeScript Developer",
-        "Cloud & DevOps Enthusiast"
-      ],
+    if (!typedRef.current) return;
+
+    const typed = new Typed(typedRef.current, {
+      strings: t("hero.roles", { returnObjects: true }) as string[],
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
     });
 
     return () => typed.destroy();
-  }, []);
+  }, [i18n.language, t]);
 
   const particlesInit = async (engine: Engine) => {
     await loadSlim(engine);
   };
 
   return (
+    <>
+    <Helmet>
+  <title>
+    {t("hero.seo.title")} | Mussadiq Ali
+  </title>
+
+  <meta
+    name="description"
+    content={t("hero.seo.description")}
+  />
+
+  <meta
+    name="keywords"
+    content={t("hero.seo.keywords")}
+  />
+
+  <link
+    rel="canonical"
+    href="https://mussadiqali15671.github.io/my-portfolio/"
+  />
+</Helmet>
+
     <section id="hero" className="hero">
 
+      {/* 🌍 LANGUAGE SWITCHER */}
+        <div className="hero-language">
+          <LanguageSwitcher />
+        </div>
+  
       {/* PARTICLES */}
       <Particles
         init={particlesInit}
@@ -54,29 +80,33 @@ export default function Hero() {
 
           {/* LEFT */}
           <div className="col-lg-7 text-lg-start text-center">
-            <h2 className="hero-name">Mussadiq Ali</h2>
+            <h2 className="hero-name">{t("hero.name")}</h2>
 
             <p>
-              I'm <span ref={typedRef} />
+              {t("hero.im")} <span ref={typedRef} />
             </p>
 
             {/* SERVICE */}
             <a href="#contact" className="hero-service">
-              For any type of <span>software</span>, <span>website</span>,
-              <span> AI solution</span>, or <span>chatbot</span> — I can build it for you.<br/>
-              <strong> Free consultation</strong> →
+              {t("hero.service.line1")}{" "}
+              <span>{t("hero.service.software")}</span>,{" "}
+              <span>{t("hero.service.website")}</span>,{" "}
+              <span>{t("hero.service.ai")}</span>,{" "}
+              <span>{t("hero.service.chatbot")}</span>{" "}
+              — {t("hero.service.line2")}
+              <br />
+              <strong>{t("hero.service.free")}</strong> →
             </a>
 
             {/* ACTIONS */}
             <div className="hero-actions">
-
               <a
                 href="https://wa.me/923105292088"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-whatsapp"
               >
-                📱 WhatsApp: +92 310 5292088 — <span>Direct message me</span>
+                📱 {t("hero.whatsapp")} — <span>{t("hero.whatsappCta")}</span>
               </a>
 
               <a
@@ -84,9 +114,8 @@ export default function Hero() {
                 download
                 className="hero-btn"
               >
-                Download CV
+                {t("hero.download")}
               </a>
-
             </div>
           </div>
 
@@ -102,5 +131,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -5,17 +5,21 @@ import en from "./locales/en.json";
 import ur from "./locales/ur.json";
 import ar from "./locales/ar.json";
 
-i18n.use(initReactI18next).init({
-  resources: {
-    en: { translation: en },
-    ur: { translation: ur },
-    ar: { translation: ar },
-  },
-  lng: "en",
-  fallbackLng: "en",
-  interpolation: {
-    escapeValue: false,
-  },
-});
+const savedLang = localStorage.getItem("lang") || "en";
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { translation: en },
+      ur: { translation: ur },
+      ar: { translation: ar },
+    },
+    lng: savedLang,          // 👈 load saved language
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: false,
+    },
+  });
 
 export default i18n;

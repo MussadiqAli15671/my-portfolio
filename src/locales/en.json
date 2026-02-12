@@ -26,5 +26,248 @@
     "freelanceValue": "Available",
 
     "closing": "From building admin dashboards to developing intelligent AI platforms and scalable APIs, I always prioritize performance, security, and user-friendly design in every project."
-  }
+  },
+  "contact": {
+    "seo": {
+    "title": "Contact AI & Full Stack Developer",
+    "description": "Get in touch with Mussadiq Ali for AI solutions, software development, websites, chatbots, and enterprise systems. Available for freelance and full-time opportunities.",
+    "keywords": "Contact AI Developer, Hire Full Stack Developer, Software Developer Contact, Website Developer, Freelance Developer"
+  },
+    "title": "Contact",
+    "subtitle": "Available for freelance projects and full-time opportunities. Feel free to reach out — I’d be happy to help.",
+    "addressLabel": "Address",
+    "addressValue": "Rawalpindi, Pakistan",
+    "phoneLabel": "Call",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+
+    "alert": {
+      "successTitle": "Message Sent!",
+      "successText": "I will contact you shortly 🙂",
+      "errorTitle": "Error",
+      "errorText": "Email failed to send!"
+    }
+  },
+  "header": {
+    "name": "Mussadiq Ali",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "resume": "Resume",
+      "projects": "Projects",
+      "services": "Services",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "seo": {
+    "title": "AI Developer & Full Stack Software Engineer",
+    "description": "Mussadiq Ali is an AI Developer and Full Stack Software Engineer providing AI solutions, chatbots, websites, and enterprise software worldwide.",
+    "keywords": "AI Developer, Full Stack Developer, Software Engineer, Website Developer, Chatbot Developer, AI Solutions"
+  },
+    "name": "Mussadiq Ali",
+    "im": "I'm",
+    "roles": [
+      "Full Stack Developer",
+      "AI & Machine Learning Engineer",
+      ".NET Core Specialist",
+      "React + TypeScript Developer",
+      "Cloud & DevOps Enthusiast"
+    ],
+    "service": {
+      "line1": "For any type of",
+      "software": "software",
+      "website": "website",
+      "ai": "AI solution",
+      "chatbot": "chatbot",
+      "line2": "I can build it for you.",
+      "free": "Free consultation"
+    },
+    "whatsapp": "WhatsApp: +92 310 5292088",
+    "whatsappCta": "Direct message me",
+    "download": "Download CV"
+  },
+  "projects": {
+    "seo": {
+    "title": "AI, Full Stack & Enterprise Projects",
+    "description": "Explore real-world AI, full stack, backend, and enterprise software projects built using React, .NET Core, Python, and cloud technologies.",
+    "keywords": "AI Projects, Full Stack Projects, Software Projects, Backend APIs, Enterprise Applications"
+  },
+    "title": "Projects",
+    "subtitle": "A collection of real-world projects I have worked on, including backend APIs, full-stack applications, AI solutions, and enterprise-level systems.",
+    "filters": {
+      "all": "All",
+      "backend": "Backend APIs",
+      "fullstack": "Full Stack Apps",
+      "ai": "AI / ML",
+      "enterprise": "Enterprise"
+    },
+    "legacy": "Legacy Optimization",
+    "items": {
+      "routine": "Routine Planner",
+      "refer": "Refer App",
+      "lms": "LMS Portal (NCCCO)",
+      "myccco": "MyCCCO System",
+      "lmsAdmin": "LMS Admin (NCCCO)",
+      "employee": "Employee Management",
+      "intellect": "Intellect Gate",
+      "aiScout": "AI Business Scout",
+      "cv": "CV Matcher",
+      "hallVendor": "Halliburton QCDOC Vendor",
+      "hallInternal": "Halliburton Internal"
+    }
+  },
+  "resume": {
+     "seo": {
+    "title": "Resume | AI & Full Stack Software Engineer",
+    "description": "Professional resume of Mussadiq Ali, an AI and Full Stack Software Engineer with experience in enterprise systems, cloud platforms, and scalable applications.",
+    "keywords": "AI Developer Resume, Full Stack Developer Resume, Software Engineer Experience, .NET Core Developer"
+  },
+    "title": "Resume",
+    "subtitle": "Full Stack Developer (AI) specializing in .NET Core, Python, ML, NLP and React with experience building scalable enterprise solutions and cloud-integrated applications.",
+
+    "education": {
+      "title": "Education",
+      "degree": "BS in Computer Science",
+      "achievement": "Gold Medalist 🏅 – CGPA 3.95 / 4.00",
+      "duration": "2020 – 2024",
+      "institute": "National University of Modern Languages (NUML), Islamabad",
+      "description": "Completed core CS courses in Data Structures, Algorithms, Software Engineering, and Artificial Intelligence. Developed multiple academic and industry-grade software projects."
+    },
+
+    "experience": {
+      "title": "Professional Experience",
+
+      "exp1": {
+        "role": "Full Stack Developer",
+        "duration": "Sep 2024 – Sep 2025",
+        "company": "ASM Wiz LLC – Houston, Texas, USA",
+        "points": [
+          "Developed enterprise-grade applications across energy, education, and service domains using .NET Core, SQL Server, and React/Redux.",
+          "Led backend architecture design, API development, and CI/CD pipelines using Azure DevOps.",
+          "Customized Microsoft Dynamics 365 Dataverse modules and integrated secure third-party services (Stripe, Backblaze).",
+          "Implemented Power Apps Flows and automated background jobs for business workflows and process integrations.",
+          "Applied performance optimization and data security standards across multiple projects."
+        ]
+      },
+
+      "exp2": {
+        "role": "Full Stack Engineer",
+        "duration": "Jun 2022 – Jun 2023",
+        "company": "GrowUp Tech Solutions – NIC Islamabad",
+        "points": [
+          "Worked on full-stack development using React.js (frontend) and Python (backend) with Firebase integration.",
+          "Built real-time web scraping tools and data dashboards using Tornado, Playwright, and Selenium.",
+          "Delivered user-centric applications for retail and education clients under rapid development cycles.",
+          "Collaborated closely with UI/UX teams to produce responsive, scalable products."
+        ]
+      }
+    }
+  },
+  
+  "services": {
+    "seo": {
+    "title": "Software Development, AI & Website Services",
+    "description": "Professional software development services including AI solutions, full stack development, websites, chatbots, automation, and enterprise systems.",
+    "keywords": "Software Development Services, AI Solutions, Website Development, Full Stack Developer, Chatbot Development, Automation Services"
+  },
+    "title": "Services",
+    "subtitle": "I offer end-to-end development solutions for businesses and startups—from scalable APIs to intelligent automation systems. With expertise in .NET Core, React, Python, and AI, I bring ideas to life through modern technology stacks.",
+
+    "items": {
+      "fullstack": {
+        "title": "Full Stack Development",
+        "desc": "End-to-end applications using .NET Core, Django, Flask, React, TypeScript and SQL/NoSQL databases."
+      },
+      "software": {
+        "title": "Custom Software Solutions",
+        "desc": "Design and development of custom software for any business need — from enterprise systems and automation tools to desktop, web, and cloud-based applications built for scalability, security, and performance."
+      },
+      "website": {
+        "title": "Website Development",
+        "desc": "Modern, high-performance business websites built with the latest technologies, featuring immersive 3D-style UI, smooth animations, responsive layouts, and SEO-optimized architecture."
+      },
+      "whatsapp": {
+        "title": "AI WhatsApp Chatbots",
+        "desc": "Intelligent WhatsApp chatbots powered by AI to automate customer support, lead generation, bookings, and sales using the official WhatsApp Business API."
+      },
+      "voice": {
+        "title": "AI Voice Agents",
+        "desc": "AI-powered voice agents handling real-time calls, bookings, support, and lead qualification with human-like conversations available 24/7."
+      },
+      "realtime": {
+        "title": "Real-Time Systems",
+        "desc": "SignalR and WebSockets based dashboards, live communication apps, and collaborative platforms."
+      },
+      "api": {
+        "title": "API Design & Integration",
+        "desc": "Secure REST & GraphQL APIs with third-party integrations using C#, Python, and Node."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "desc": "OpenAI-powered systems, LangChain workflows, and Python automation tools."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "desc": "Scalable mobile & web backends with authentication, real-time updates, and secure APIs."
+      },
+      "uiux": {
+        "title": "UI/UX & Dashboards",
+        "desc": "Modern admin panels and responsive frontends using React, Bootstrap, and Tailwind."
+      },
+      "portfolio": {
+        "title": "Portfolio Websites",
+        "desc": "Professional portfolio websites with clean UI, contact forms, and image galleries."
+      },
+      "database": {
+        "title": "Database Development",
+        "desc": "SQL & NoSQL schema design, query optimization, and scalable database systems."
+      }
+    }
+  },
+  "skills": {
+    "seo": {
+    "title": "Technical Skills | AI & Full Stack Development",
+    "description": "Technical skills of Mussadiq Ali including AI, machine learning, full stack development, cloud platforms, and modern software technologies.",
+    "keywords": "AI Skills, Full Stack Skills, Software Development Skills, React, .NET Core, Python, Machine Learning"
+  },
+    "title": "Skills",
+    "subtitle": "Technologies and tools I use to build modern scalable systems.",
+    "items": [
+      ".NET Core / C#",
+      "Entity Framework / LINQ",
+      "React / TypeScript",
+      "JavaScript",
+      "Python",
+      "SQL / NoSQL",
+      "Azure",
+      "GitHub",
+      "CI / CD Pipelines",
+      "Dataverse",
+      "Firebase / Backblaze",
+      "Power Apps",
+      "Web Scraping",
+      "AI Solutions",
+      "Chatbots",
+      "NLP",
+      "Machine Learning",
+      "Neural Networks",
+      "Cloud & DevOps"
+    ]
+  },
+  "seo": {
+  "title": "AI & Full Stack Developer | Software, Websites & AI Solutions – Mussadiq Ali",
+  "description": "AI & Full Stack Developer specializing in software development, modern websites, AI solutions, chatbots, and scalable enterprise systems.",
+  "keywords": "AI Developer, Full Stack Developer, Software Developer, Website Developer, AI Solutions, Chatbot Developer, React Developer, .NET Core Developer, Python Developer",
+  "ogTitle": "AI & Full Stack Developer – Mussadiq Ali",
+  "ogDescription": "Building AI-powered software, websites, chatbots, and scalable enterprise systems."
+}
 }
