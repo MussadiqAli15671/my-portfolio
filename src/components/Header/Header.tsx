@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -30,40 +31,47 @@ export default function Header() {
         className={`header d-flex flex-column ${open ? "header-show" : ""}`}
       >
         {/* SITE NAME */}
-        <h1 className="sitename">{t("header.name")}</h1>
+        <Link to="/my-portfolio" onClick={() => setOpen(false)} style={{ textDecoration: "none" }}>
+          <h1 className="sitename">{t("header.name")}</h1>
+        </Link>
 
         {/* NAV MENU */}
         <nav className="navmenu">
           <ul>
             <li>
-              <a href="#hero" onClick={() => setOpen(false)}>
+              <Link to="/my-portfolio" onClick={() => setOpen(false)}>
                 {t("header.menu.home")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" onClick={() => setOpen(false)}>
+              <Link to="/about" onClick={() => setOpen(false)}>
                 {t("header.menu.about")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#resume" onClick={() => setOpen(false)}>
+              <Link to="/resume" onClick={() => setOpen(false)}>
                 {t("header.menu.resume")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#portfolio" onClick={() => setOpen(false)}>
+              <Link to="/skills" onClick={() => setOpen(false)}>
+                {t("header.menu.skills")}
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects" onClick={() => setOpen(false)}>
                 {t("header.menu.projects")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services" onClick={() => setOpen(false)}>
+              <Link to="/services" onClick={() => setOpen(false)}>
                 {t("header.menu.services")}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" onClick={() => setOpen(false)}>
+              <Link to="/contact" onClick={() => setOpen(false)}>
                 {t("header.menu.contact")}
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

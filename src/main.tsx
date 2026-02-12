@@ -16,7 +16,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/my-portfolio">
       <HelmetProvider>
         <App />
       </HelmetProvider>
