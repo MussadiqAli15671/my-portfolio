@@ -139,6 +139,10 @@
     font-size: 18px;
   }
 
+  .hero p {
+    font-size: 18px;
+  }
+
   .hero-profile {
     width: 220px;
     height: 220px;
@@ -219,4 +223,23 @@ html[dir="rtl"] .language-switcher-wrapper {
   opacity: 0.85;
   font-style: italic;
   font-weight: 400; /* override hero span weight */
+}
+
+/* ================= RESPONSIVE: SMALLER SCREENS ================= */
+
+@media (max-width: 768px) {
+  .language-switcher-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  html[dir="rtl"] .language-switcher-wrapper {
+    align-items: flex-end;
+  }
+
+  .hero .language-hint {
+    white-space: normal;
+    font-size: 10px;
+  }
 }
