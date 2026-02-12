@@ -31,7 +31,7 @@ export default function Header() {
         className={`header d-flex flex-column ${open ? "header-show" : ""}`}
       >
         {/* SITE NAME */}
-        <Link to="/my-portfolio" onClick={() => setOpen(false)} style={{ textDecoration: "none" }}>
+        <Link to="/" onClick={() => setOpen(false)} style={{ textDecoration: "none" }}>
           <h1 className="sitename">{t("header.name")}</h1>
         </Link>
 
@@ -39,7 +39,7 @@ export default function Header() {
         <nav className="navmenu">
           <ul>
             <li>
-              <Link to="/my-portfolio" onClick={() => setOpen(false)}>
+              <Link to="/" onClick={() => setOpen(false)}>
                 {t("header.menu.home")}
               </Link>
             </li>

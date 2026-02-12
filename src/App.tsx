@@ -40,7 +40,7 @@ export default function App() {
       <Header />
 
       <Routes>
-        <Route path="/my-portfolio" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/skills" element={<SkillsPage />} />
