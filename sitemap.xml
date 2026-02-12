@@ -1,46 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home -->
   <url>
     <loc>https://mussadiqali15671.github.io/my-portfolio/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- About -->
+</urlset>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://mussadiqali15671.github.io/my-portfolio/about</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
-  <!-- Resume -->
   <url>
-    <loc>https://mussadiqali15671.github.io/my-portfolio/resume</loc>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Projects -->
   <url>
-    <loc>https://mussadiqali15671.github.io/my-portfolio/projects</loc>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Services -->
   <url>
-    <loc>https://mussadiqali15671.github.io/my-portfolio/services</loc>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Contact -->
   <url>
-    <loc>https://mussadiqali15671.github.io/my-portfolio/contact</loc>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#skills</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#resume</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mussadiqali15671.github.io/my-portfolio/#contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset> -->
