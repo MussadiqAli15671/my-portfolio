@@ -60,7 +60,7 @@ export default function Contact() {
 
         <link
           rel="canonical"
-          href="https://mussadiqali15671.github.io/my-portfolio/#contact"
+          href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/#contact"
         />
       </Helmet>
 
