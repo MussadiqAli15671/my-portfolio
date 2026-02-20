@@ -28,7 +28,7 @@ export default function HomePage() {
 
       <link
         rel="canonical"
-        href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/"
+        href="https://mussadiq-ali-portfolio.vercel.app/"
       />
     </Helmet>
     

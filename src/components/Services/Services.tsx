@@ -25,7 +25,7 @@ export default function Services() {
 
         <link
           rel="canonical"
-          href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/#services"
+          href="https://mussadiq-ali-portfolio.vercel.app/#services"
         />
       </Helmet>
 

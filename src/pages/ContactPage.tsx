@@ -21,7 +21,7 @@ export default function ContactPage() {
 
   <link
     rel="canonical"
-    href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/contact"
+    href="https://mussadiq-ali-portfolio.vercel.app/contact"
   />
 </Helmet>
 

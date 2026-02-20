@@ -62,7 +62,7 @@ export default function Portfolio() {
 
       <link
         rel="canonical"
-        href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/#portfolio"
+        href="https://mussadiq-ali-portfolio.vercel.app/#portfolio"
       />
     </Helmet>
 
