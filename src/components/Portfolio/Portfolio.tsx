@@ -117,7 +117,7 @@ function Project({ img, title, tech }: { img: string; title: string; tech: strin
   return (
     <div className="col-lg-4 col-md-6 portfolio-item">
       <div className="portfolio-content">
-        <img src={`/my-portfolio/assets/img/${img}`} />
+        <img src={`/assets/img/${img}`} />
         <div className="portfolio-info">
           <h4>{title}</h4>
           <p>{tech}</p>
