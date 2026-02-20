@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://my-portfolio-mu-liard-vgt5886y18.vercel.app/sitemap.xml
+Sitemap: https://mussadiq-ali-portfolio.vercel.app/sitemap.xml

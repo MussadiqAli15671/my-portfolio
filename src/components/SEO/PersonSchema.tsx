@@ -9,7 +9,7 @@ export default function PersonSchema() {
           "@type": "Person",
           "name": "Mussadiq Ali",
           "jobTitle": "Full Stack & AI Developer",
-          "url": "https://my-portfolio-mu-liard-vgt5886y18.vercel.app/",
+          "url": "https://mussadiq-ali-portfolio.vercel.app/",
           "sameAs": [
             "https://www.linkedin.com/in/mussadiqaliprogrammer/"
           ],

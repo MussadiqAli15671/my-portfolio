@@ -21,7 +21,7 @@ export default function AboutPage() {
 
   <link
     rel="canonical"
-    href="https://my-portfolio-mu-liard-vgt5886y18.vercel.app/about"
+    href="https://mussadiq-ali-portfolio.vercel.app/about"
   />
     </Helmet>
     
