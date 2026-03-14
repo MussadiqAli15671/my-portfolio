@@ -65,6 +65,7 @@
       "skills": "Skills",
       "projects": "Projects",
       "services": "Services",
+      "events": "Events",
       "contact": "Contact"
     }
   },
@@ -263,6 +264,32 @@
       "Neural Networks",
       "Cloud & DevOps"
     ]
+  },
+  "events": {
+    "title": "Events",
+    "description": "Highlights from my professional journey and key milestones.",
+    "graduationSpeech": {
+      "title": "Graduation Speech",
+      "description": "My graduation speech from BS Computer Science, sharing insights and experiences from my academic journey.",
+      "detailsTitle": "BSCS Gold Medalist | Addressing NUML Convocation 2025",
+      "para1": "Honored to receive the Gold Medal in BS Computer Science and to deliver the Gold Medalist Speech at the Convocation Ceremony of the National University of Modern Languages (NUML), Islamabad Main Campus on 21 August 2025.",
+      "para2": "Public speaking has been part of my journey since primary school, where I used to deliver English speeches during school events. What started as a small stage in school eventually led me to the honor of addressing the graduating class at the NUML convocation ceremony.",
+      "para3": "This moment reflects not only academic dedication but also the importance of communication, confidence, and continuous learning throughout the journey.",
+      "para4": "As an AI & Full-Stack Engineer and MPhil Computer Science student, I am passionate about building intelligent software systems, working on AI-driven applications and automation, exploring Computer Vision, and collaborating with researchers, industry professionals, and innovators.",
+      "para5": "I am grateful to my teachers, mentors, and family who supported me throughout this journey.",
+      "para6": "Looking forward to contributing to technology, research, and innovation in the years ahead."
+    },
+    "zindigiPrize": {
+      "title": "Participation in Zindigi Prize (JS Bank)",
+      "description": "Selected to pitch my business idea at the regional level of the Zindigi Prize competition.",
+      "detailsTitle": "Project Title: Participation in Zindigi Prize (JS Bank)",
+      "para1": "Location: HITEC University, Taxila",
+      "para2": "Date: 07-07-2023",
+      "para3": "Selected Participation: Earned a spot to pitch my idea at the regional level of the Zindigi Prize competition.",
+      "para4": "Pitching & Presentation: Presented a business concept to a jury led by Regional Chief Officer Noman Azhar, effectively communicating my vision under a strict timeline.",
+      "para5": "Networking: Engaged with fellow entrepreneurs and representatives from JS Bank, gaining insights into the current startup ecosystem in Pakistan.",
+      "para6": "Recognition: Received an official Certificate of Appreciation for my participation in the event, themed \"Leading Dreams to Success.\""
+    }
   },
   "seo": {
   "title": "AI & Full Stack Developer | Software, Websites & AI Solutions – Mussadiq Ali",

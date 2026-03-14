@@ -69,6 +69,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link to="/events" onClick={() => setOpen(false)}>
+                {t("header.menu.events")}
+              </Link>
+            </li>
+            <li>
               <Link to="/contact" onClick={() => setOpen(false)}>
                 {t("header.menu.contact")}
               </Link>
