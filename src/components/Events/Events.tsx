@@ -1,4 +1,9 @@
 import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./events.css";
 
 export default function Events() {
@@ -48,7 +53,27 @@ export default function Events() {
             <h3>{t("events.zindigiPrize.title")}</h3>
             <p>{t("events.zindigiPrize.description")}</p>
             <div className="image-container">
-              <img src="/assets/img/ZindagiPrice.jpg" alt="Zindigi Prize Participation" />
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                spaceBetween={30}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                loop={true}
+                className="event-swiper"
+              >
+                <SwiperSlide>
+                  <img src="/assets/img/ZindagiPrice.jpg" alt="Zindigi Prize Participation" />
+                </SwiperSlide>
+                  <SwiperSlide>
+                  <img src="/assets/img/JS1.jpeg" alt="Zindigi Prize Participation" />
+                </SwiperSlide>
+                 <SwiperSlide>
+                  <img src="/assets/img/JS2.jpeg" alt="Zindigi Prize Participation" />
+                </SwiperSlide>
+                {/* Add more SwiperSlide components here for additional images */}
+              </Swiper>
             </div>
             <div className="event-details">
               <h4>{t("events.zindigiPrize.detailsTitle")}</h4>

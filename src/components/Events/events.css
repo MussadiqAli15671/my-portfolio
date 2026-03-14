@@ -90,6 +90,30 @@
   box-shadow: 0 10px 30px rgba(0,0,0,.5);
 }
 
+/* ================= SWIPER STYLES ================= */
+
+.event-swiper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-swiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+.event-swiper .swiper-button-next,
+.event-swiper .swiper-button-prev {
+  color: #14a0dd;
+}
+
+.event-swiper .swiper-pagination-bullet-active {
+  background-color: #14a0dd;
+}
+
 /* ================= EVENT DETAILS ================= */
 
 .event-details {
