@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
 import "./events.css";
 
 export default function Events() {
@@ -63,9 +61,9 @@ export default function Events() {
                 loop={true}
                 className="event-swiper"
               >
-                <SwiperSlide>
+                {/* <SwiperSlide>
                   <img src="/assets/img/ZindagiPrice.jpg" alt="Zindigi Prize Participation" />
-                </SwiperSlide>
+                </SwiperSlide> */}
                   <SwiperSlide>
                   <img src="/assets/img/JS1.jpeg" alt="Zindigi Prize Participation" />
                 </SwiperSlide>
