@@ -13,6 +13,7 @@ import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
+import EventsPage from "./pages/EventsPage";
 
 import PersonSchema from "./components/SEO/PersonSchema";
 import ServiceSchema from "./components/SEO/ServiceSchema";
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="/projects" element={<PortfolioPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/events" element={<EventsPage />} />
       </Routes>
 
       <Footer />
