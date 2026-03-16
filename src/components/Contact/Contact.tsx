@@ -242,7 +242,7 @@ export default function Contact() {
 
         <link
           rel="canonical"
-          href="https://mussadiqali15671.github.io/my-portfolio/#contact"
+          href="https://mussadiq-ali-portfolio.vercel.app/#contact"
         />
       </Helmet>
 

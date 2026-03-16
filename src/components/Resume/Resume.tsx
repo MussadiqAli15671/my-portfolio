@@ -24,7 +24,7 @@ export default function Resume() {
 
       <link
         rel="canonical"
-        href="https://mussadiqali15671.github.io/my-portfolio/#resume"
+        href="https://mussadiq-ali-portfolio.vercel.app/#resume"
       />
     </Helmet>
 

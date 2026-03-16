@@ -20,7 +20,7 @@ export default function ServiceSchema() {
             "Chatbot Development",
             "Software Development"
           ],
-          "url": "https://mussadiqali15671.github.io/my-portfolio/#services"
+          "url": "https://mussadiq-ali-portfolio.vercel.app/#services"
         })}
       </script>
     </Helmet>

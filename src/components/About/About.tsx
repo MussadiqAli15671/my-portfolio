@@ -17,7 +17,7 @@ export default function About() {
 
   <link
     rel="canonical"
-    href="https://mussadiqali15671.github.io/my-portfolio/#about"
+    href="https://mussadiq-ali-portfolio.vercel.app/#about"
   />
 </Helmet>
 

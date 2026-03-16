@@ -27,7 +27,7 @@ export default function Skills() {
 
       <link
         rel="canonical"
-        href="https://mussadiqali15671.github.io/my-portfolio/#skills"
+        href="https://mussadiq-ali-portfolio.vercel.app/#skills"
       />
     </Helmet>
 

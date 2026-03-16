@@ -48,7 +48,7 @@ export default function Hero() {
 
   <link
     rel="canonical"
-    href="https://mussadiqali15671.github.io/my-portfolio/"
+    href="https://mussadiq-ali-portfolio.vercel.app/"
   />
 </Helmet>
 
