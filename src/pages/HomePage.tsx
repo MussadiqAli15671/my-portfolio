@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Services from "../components/Services/Services";
 import Contact from "../components/Contact/Contact";
 import { Helmet } from "react-helmet-async";
+import Events from "../components/Events/Events";
 
 export default function HomePage() {
   return (
@@ -37,6 +38,7 @@ export default function HomePage() {
       <Skills />
       <Resume />
       <Portfolio />
+      <Events />
       <Services />
       <Contact />
     </>
