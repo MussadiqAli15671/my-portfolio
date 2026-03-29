@@ -298,6 +298,7 @@ backgroundColor: 'black'}}>
                 <li>Customized Microsoft Dynamics 365 Dataverse modules and integrated secure third-party services (Stripe, Backblaze).</li>
                 <li>Implemented Power Apps Flows and automated background jobs for business workflows and process integrations.</li>
                 <li>Implemented performance optimizations and data security standards across multiple projects.</li>
+                
               </ul>
             </div>{/* Edn Resume Item */}
             <div className="resume-item">

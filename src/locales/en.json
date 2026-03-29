@@ -157,7 +157,18 @@
           "Led backend architecture design, API development, and CI/CD pipelines using Azure DevOps.",
           "Customized Microsoft Dynamics 365 Dataverse modules and integrated secure third-party services (Stripe, Backblaze).",
           "Implemented Power Apps Flows and automated background jobs for business workflows and process integrations.",
-          "Applied performance optimization and data security standards across multiple projects."
+          "Applied performance optimization and data security standards across multiple projects.",
+           "Optimized performance of Halliburton internal systems and external QCDOC vendor platforms by analyzing page-level bottlenecks, significantly improving page load times.",
+  "Enhanced database performance by refactoring and optimizing complex stored procedures, ensuring faster and more efficient data retrieval.",
+  "Utilized Microsoft SQL Server Profiler and debugging techniques to trace database queries, identify performance issues, and resolve system bottlenecks.",
+  "Modernized legacy systems by refactoring code into scalable architectures and applying industry-standard design patterns, improving maintainability and system reliability.",
+  "Migrated legacy stored procedure-based data access to Entity Framework and LINQ, reducing code complexity and enhancing maintainability.",
+  "Handled client-reported and internal tickets, delivering new features, resolving bugs, and continuously improving system performance.",
+  "Contributed to the development of NCCCO LMS (internal and external), enabling course management, quizzes, results processing, and user workflows.",
+  "Designed and implemented course structures including lessons, quizzes, questions, answers, and prerequisite systems using React (TypeScript) and .NET Core.",
+  "Automated workflows using Power Apps and background jobs for tasks such as email notifications, quiz completion tracking, and system synchronization.",
+  "Integrated LMS with WordPress using custom PHP-based webhooks for seamless data synchronization across platforms.",
+  "Developed internal NCCCO modules for organizational management, improving operational efficiency for internal teams."
         ]
       },
 
