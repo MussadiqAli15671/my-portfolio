@@ -67,11 +67,9 @@ export default function Resume() {
               </p>
 
               <ul>
-                <li>{t("resume.experience.exp1.points.0")}</li>
-                <li>{t("resume.experience.exp1.points.1")}</li>
-                <li>{t("resume.experience.exp1.points.2")}</li>
-                <li>{t("resume.experience.exp1.points.3")}</li>
-                <li>{t("resume.experience.exp1.points.4")}</li>
+                {(t("resume.experience.exp1.points", { returnObjects: true }) as string[]).map((point: string, index: number) => (
+                  <li key={index}>{point}</li>
+                ))}
               </ul>
             </div>
 
@@ -84,10 +82,9 @@ export default function Resume() {
               </p>
 
               <ul>
-                <li>{t("resume.experience.exp2.points.0")}</li>
-                <li>{t("resume.experience.exp2.points.1")}</li>
-                <li>{t("resume.experience.exp2.points.2")}</li>
-                <li>{t("resume.experience.exp2.points.3")}</li>
+                {(t("resume.experience.exp2.points", { returnObjects: true }) as string[]).map((point: string, index: number) => (
+                  <li key={index}>{point}</li>
+                ))}
               </ul>
             </div>
 
