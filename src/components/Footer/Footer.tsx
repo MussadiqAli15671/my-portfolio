@@ -10,7 +10,7 @@ export default function Footer() {
           {/* You can delete the links only if you've purchased the pro version. */}
           {/* Licensing information: https://bootstrapmade.com/license/ */}
           {/* Purchase the pro version with working PHP/AJAX contact form: [buy-url] */}
-          Designed by <a href="#">MaTechs</a> Distributed by <a href="#">MaTechs</a>
+          Designed by <a href="#">Mussadiq</a> Distributed by <a href="#">Mussadiq</a>
         </div>
       </div>
     </footer>
