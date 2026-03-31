@@ -102,8 +102,8 @@ export default function Portfolio() {
           <Project img="cv-matcher1.jpg" title={t("projects.items.cv")} tech="OpenAI" />
 
           {/* ===== ENTERPRISE ===== */}
-          <Project img="halliburton.jpg" title={t("projects.items.hallVendor")} tech={t("projects.legacy")} />
-          <Project img="halliburton.jpg" title={t("projects.items.hallInternal")} tech=".NET Framework" />
+          {/* <Project img="halliburton.jpg" title={t("projects.items.hallVendor")} tech={t("projects.legacy")} /> */}
+          {/* <Project img="halliburton.jpg" title={t("projects.items.hallInternal")} tech=".NET Framework" /> */}
 
         </div>
       </div>

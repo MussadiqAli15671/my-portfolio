@@ -273,7 +273,10 @@
       "NLP",
       "Machine Learning",
       "Neural Networks",
-      "Cloud & DevOps"
+      "Cloud & DevOps",
+      "Performance Optimization",
+      "Database Design (Normalizations & Optimization)",
+      "Version Control (Git)"
     ]
   },
   "events": {
