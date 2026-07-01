@@ -11,6 +11,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
+import PortfolioDetails from "./pages/PortfolioDetails";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
 import EventsPage from "./pages/EventsPage";
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/projects" element={<PortfolioPage />} />
+        <Route path="/projects/:id" element={<PortfolioDetails />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/events" element={<EventsPage />} />

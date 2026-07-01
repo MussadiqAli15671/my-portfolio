@@ -113,17 +113,17 @@
     },
     "legacy": "تحسين الأنظمة القديمة",
     "items": {
-      "routine": "مخطط المهام",
-      "refer": "تطبيق الإحالة",
-      "lms": "بوابة LMS (NCCCO)",
-      "myccco": "نظام MyCCCO",
-      "lmsAdmin": "إدارة LMS",
-      "employee": "إدارة الموظفين",
-      "intellect": "إنتليكت جيت",
-      "aiScout": "مستكشف الأعمال بالذكاء الاصطناعي",
-      "cv": "مطابقة السيرة الذاتية",
-      "hallVendor": "هاليبرتون QCDOC مورد",
-      "hallInternal": "هاليبرتون داخلي"
+      "routineplanner": "مخطط المهام",
+      "referapp": "تطبيق الإحالة",
+      "lmsportal": "بوابة LMS (NCCCO)",
+      "mycccosystem": "نظام MyCCCO",
+      "lmsadmin": "إدارة LMS",
+      "employeemanagement": "إدارة الموظفين",
+      "intellectgate": "إنتليكت جيت",
+      "aibusinessscout": "مستكشف الأعمال بالذكاء الاصطناعي",
+      "cvmatcher": "مطابقة السيرة الذاتية",
+      "halliburtonqcdocvendor": "هاليبرتون QCDOC مورد",
+      "halliburtoninternal": "هاليبرتون داخلي"
     }
   },
   "resume": {

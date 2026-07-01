@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Isotope from "isotope-layout";
 import GLightbox from "glightbox";
 import imagesLoaded from "imagesloaded";
 import "./portfolio.css";
 import { Helmet } from "react-helmet-async";
+import { projectsData } from "../../data/projects";
 
 export default function Portfolio() {
   const { t } = useTranslation();
@@ -85,26 +87,17 @@ export default function Portfolio() {
         </ul>
 
         <div className="row isotope-container gy-4">
-
-          {/* ===== BACKEND ===== */}
-          <Project img="routineApp.jpg" title={t("projects.items.routine")} tech=".NET Core • Stripe • SignalR" />
-          <Project img="refer-app.jpg" title={t("projects.items.refer")} tech=".NET Core API • Firebase" />
-
-          {/* ===== FULLSTACK ===== */}
-          <Project img="lms.jpg" title={t("projects.items.lms")} tech="React TS • .NET Core" />
-          <Project img="nccco.jpg" title={t("projects.items.myccco")} tech=".NET API • React • CRM • Power Apps" />
-          <Project img="lmsadmin.jpg" title={t("projects.items.lmsAdmin")} tech="React • MSSQL • Azure • CI/CD" />
-          <Project img="employee.jpg" title={t("projects.items.employee")} tech="Django • React" />
-          <Project img="intellectgate1.jpg" title={t("projects.items.intellect")} tech="React TS" />
-
-          {/* ===== AI ===== */}
-          <Project img="my.png" title={t("projects.items.aiScout")} tech="Python • ML" />
-          <Project img="cv-matcher1.jpg" title={t("projects.items.cv")} tech="OpenAI" />
-
-          {/* ===== ENTERPRISE ===== */}
-          {/* <Project img="halliburton.jpg" title={t("projects.items.hallVendor")} tech={t("projects.legacy")} /> */}
-          {/* <Project img="halliburton.jpg" title={t("projects.items.hallInternal")} tech=".NET Framework" /> */}
-
+          {projectsData.map((project) => (
+            <Project
+              key={project.id}
+              id={project.id}
+              img={project.image}
+              title={t(`projects.items.${project.id.replace(/-/g, '')}`)}
+              tech={project.technologies}
+              category={project.category}
+              noImage={project.noImage}
+            />
+          ))}
         </div>
       </div>
     </section>
@@ -113,18 +106,39 @@ export default function Portfolio() {
 }
 
 /* ===== REUSABLE PROJECT CARD ===== */
-function Project({ img, title, tech }: { img: string; title: string; tech: string }) {
+function Project({ id, img, title, tech, category, noImage }: {
+  id: string;
+  img: string;
+  title: string;
+  tech: string;
+  category: string;
+  noImage?: boolean;
+}) {
   return (
-    <div className="col-lg-4 col-md-6 portfolio-item">
+    <div className={`col-lg-4 col-md-6 portfolio-item ${category}`}>
       <div className="portfolio-content">
-        <img src={`/assets/img/${img}`} />
+
+        {noImage ? (
+          <div className="portfolio-placeholder" />
+        ) : (
+          <img src={`/assets/img/${img}`} />
+        )}
+
         <div className="portfolio-info">
           <h4>{title}</h4>
           <p>{tech}</p>
-          <a href={`/my-portfolio/assets/img/${img}`} className="glightbox">
-            <i className="bi bi-zoom-in" />
-          </a>
+
+          <Link to={`/projects/${id}`} className="details-link">
+            <i className="bi bi-eye" />
+          </Link>
+
+          {!noImage && (
+            <a href={`/my-portfolio/assets/img/${img}`} className="glightbox">
+              <i className="bi bi-zoom-in" />
+            </a>
+          )}
         </div>
+
       </div>
     </div>
   );
