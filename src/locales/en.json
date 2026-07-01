@@ -112,19 +112,20 @@
       "ai": "AI / ML",
       "enterprise": "Enterprise"
     },
-    "legacy": "Legacy Optimization",
+    "legacy": ".NET Framework • Microsoft SQL Server • SQL Server Profiler • Entity Framework • LINQ • Azure Application Insights • Performance Optimization • Database Optimization • CI/CD Pipelines", 
+    
     "items": {
-      "routine": "Routine Planner",
-      "refer": "Refer App",
-      "lms": "LMS Portal (NCCCO)",
-      "myccco": "MyCCCO System",
-      "lmsAdmin": "LMS Admin (NCCCO)",
-      "employee": "Employee Management",
-      "intellect": "Intellect Gate",
-      "aiScout": "AI Business Scout",
-      "cv": "CV Matcher",
-      "hallVendor": "Halliburton QCDOC Vendor",
-      "hallInternal": "Halliburton Internal"
+      "routineplanner": "Routine Planner",
+      "referapp": "Refer App",
+      "lmsportal": "LMS Portal (NCCCO)",
+      "mycccosystem": "MyCCCO System",
+      "lmsadmin": "LMS Admin (NCCCO)",
+      "employeemanagement": "Employee Management",
+      "intellectgate": "Intellect Gate",
+      "aibusinessscout": "AI Business Scout",
+      "cvmatcher": "CV Matcher",
+      "halliburtonqcdocvendor": "Halliburton QCDOC Vendor",
+      "halliburtoninternal": "Halliburton Internal"
     }
   },
   "resume": {

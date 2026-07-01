@@ -113,17 +113,17 @@
     },
     "legacy": "لیگیسی سسٹم بہتری",
     "items": {
-      "routine": "روٹین پلانر",
-      "refer": "ریفر ایپ",
-      "lms": "ایل ایم ایس پورٹل (NCCCO)",
-      "myccco": "مائی سی سی سی او سسٹم",
-      "lmsAdmin": "ایل ایم ایس ایڈمن",
-      "employee": "ایمپلائی مینجمنٹ",
-      "intellect": "انٹیلیکٹ گیٹ",
-      "aiScout": "اے آئی بزنس اسکاؤٹ",
-      "cv": "سی وی میچر",
-      "hallVendor": "ہیلیبرٹن QCDOC وینڈر",
-      "hallInternal": "ہیلیبرٹن انٹرنل"
+      "routineplanner": "روٹین پلانر",
+      "referapp": "ریفر ایپ",
+      "lmsportal": "ایل ایم ایس پورٹل (NCCCO)",
+      "mycccosystem": "مائی سی سی سی او سسٹم",
+      "lmsadmin": "ایل ایم ایس ایڈمن",
+      "employeemanagement": "ایمپلائی مینجمنٹ",
+      "intellectgate": "انٹیلیکٹ گیٹ",
+      "aibusinessscout": "اے آئی بزنس اسکاؤٹ",
+      "cvmatcher": "سی وی میچر",
+      "halliburtonqcdocvendor": "ہیلیبرٹن QCDOC وینڈر",
+      "halliburtoninternal": "ہیلیبرٹن انٹرنل"
     }
   },
   "resume": {
