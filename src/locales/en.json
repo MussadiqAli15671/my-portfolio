@@ -124,8 +124,8 @@
       "intellectgate": "Intellect Gate",
       "aibusinessscout": "AI Business Scout",
       "cvmatcher": "CV Matcher",
-      "halliburtonqcdocvendor": "Halliburton QCDOC Vendor",
-      "halliburtoninternal": "Halliburton Internal"
+      "halliburtonqcdocvendor": "QCDOC Vendor",
+      "halliburtoninternal": "QCDOCInternal"
     }
   },
   "resume": {

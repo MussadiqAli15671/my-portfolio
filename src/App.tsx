@@ -38,25 +38,27 @@ export default function App() {
   }, [i18n.language]);
 
   return (
-    <>
+    <div className="app-shell">
       <Header />
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/resume" element={<ResumePage />} />
-        <Route path="/skills" element={<SkillsPage />} />
-        <Route path="/projects" element={<PortfolioPage />} />
-        <Route path="/projects/:id" element={<PortfolioDetails />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/events" element={<EventsPage />} />
-      </Routes>
+      <main className="app-main">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/projects" element={<PortfolioPage />} />
+          <Route path="/projects/:id" element={<PortfolioDetails />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/events" element={<EventsPage />} />
+        </Routes>
+      </main>
 
       <Footer />
       <ScrollTop />
       <PersonSchema />
       <ServiceSchema />
-    </>
+    </div>
   );
 }
