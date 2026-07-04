@@ -34,9 +34,10 @@ export default function HomePage() {
     </Helmet>
     
       <Hero />
-      <About />
-      <Skills />
       <Resume />
+      <Skills />  
+      <About />
+          
       <Portfolio />
       <Events />
       <Services />

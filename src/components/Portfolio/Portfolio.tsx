@@ -92,7 +92,9 @@ export default function Portfolio() {
               key={project.id}
               id={project.id}
               img={project.image}
-              title={t(`projects.items.${project.id.replace(/-/g, '')}`)}
+              title={t(`projects.items.${project.id.replace(/-/g, '')}`, {
+                defaultValue: project.title,
+              })}
               tech={project.technologies}
               category={project.category}
               noImage={project.noImage}

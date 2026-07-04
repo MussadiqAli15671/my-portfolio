@@ -95,7 +95,7 @@ export default function Contact() {
                   icon="bi-envelope"
                   label={t("contact.emailLabel")}
                   value={
-                    <a href="mailto:ali11mussadiq@gmail.com">
+                    <a href="mailto:ali11mussadiq@gmail.com" target="_blank" rel="noopener noreferrer">
                       ali11mussadiq@gmail.com
                     </a>
                   }
