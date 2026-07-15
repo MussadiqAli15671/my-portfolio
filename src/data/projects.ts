@@ -53,6 +53,20 @@ Implemented Firebase notifications and JWT authentication.`,
     ]
   },
   {
+    id: 'agentdeskai-gmail-events-automation',
+    title: 'Secure Google Workspace Integration — OAuth, Gmail & Calendar Automation',
+    category: 'fullstack',
+    image: 'agentdeskemailcalendarautomation.png',
+    technologies: 'Python · FastAPI · Angular · OAuth 2.0 · Google APIs · Gmail API · Google Calendar API · REST APIs · PostgreSQL · SQLAlchemy · Fernet Encryption · JWT · httpx · Pydantic',
+    description: `Built a secure Google Workspace integration layer for AgentDeskAI using OAuth 2.0 and Google's REST APIs. Users can connect their Google account through the official consent flow, while AgentDeskAI securely exchanges authorization codes for access and refresh tokens, encrypts credentials at rest, and automatically refreshes expired access tokens. The integration enables AI employees to interact with Gmail and Google Calendar on behalf of users, including reading emails, sending messages, retrieving upcoming events, and creating calendar events.`,
+    features: [
+      'RESTful API architecture',
+      'Firebase authentication and database',
+      'Referral tracking and analytics',
+      'Mobile app integration ready'
+    ]
+  },
+  {
     id: 'lms-portal',
     title: 'LMS Portal (NCCCO)',
     category: 'fullstack',
