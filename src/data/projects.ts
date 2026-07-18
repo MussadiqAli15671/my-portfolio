@@ -2,7 +2,7 @@ export interface ProjectData {
   id: string;
   title: string;
   category: 'backend' | 'fullstack' | 'ai' | 'enterprise';
-  image: string;
+  image: string | string[];
   technologies: string;
   description: string;
   features: string[];
@@ -66,6 +66,32 @@ Implemented Firebase notifications and JWT authentication.`,
       'Mobile app integration ready'
     ]
   },
+  {
+id: 'AgentDeskAI — AI Employee Platform',
+title: 'AgentDeskAI — Multi-Tenant AI Employee Platform with AI Agents, Knowledge Search & Workflow Automation',
+category: 'fullstack',
+    image: ['agentDashboard.png', 'agentOpenAI.png', 'agentKB.png', 'agentSA.png'],
+technologies: 'Python · FastAPI · Angular · LangGraph · LangChain · OpenAI-Compatible LLM APIs · RAG · Qdrant · FastEmbed · PostgreSQL · SQLAlchemy · Redis · Docker · n8n · OAuth 2.0 · Gmail API · Google Calendar API · REST APIs · JWT · Fernet Encryption · httpx · Pydantic',
+
+description: `Built AgentDeskAI as my own multi-tenant AI Employee SaaS platform designed for companies that want to automate knowledge-based support and repetitive business workflows. The platform enables organizations to create AI-powered employees that understand company documents through a RAG pipeline, make tool-based decisions using LangGraph agents, securely integrate with Google Workspace, and connect external automation workflows through n8n. I designed and implemented the platform from the ground up using FastAPI, Angular, PostgreSQL, Qdrant, Redis, Docker, and modern AI agent technologies. AgentDeskAI can be customized, licensed, or deployed for companies looking to automate internal support, document-based assistance, and business processes.`,
+
+features: [
+'Multi-tenant SaaS architecture with organization-level data isolation',
+'JWT authentication and secure user/organization management',
+'Document ingestion pipeline for PDF and DOCX files',
+'RAG-based knowledge base using document chunking, embeddings, and Qdrant semantic search',
+'AI Support Agent built with LangGraph ReAct architecture',
+'Tool-based agent decision making with visible reasoning and execution traces',
+'Organization-scoped knowledge retrieval to prevent cross-tenant data leakage',
+'Google Workspace integration using OAuth 2.0 and Google REST APIs',
+'Gmail and Google Calendar integration with encrypted tokens and automatic token refresh',
+'n8n workflow automation integration for external business processes',
+'Inbound and outbound workflow triggers with execution logs',
+'Automatic document-upload workflow events',
+'Dockerized backend, frontend, PostgreSQL, Redis, Qdrant, and n8n infrastructure',
+'Designed as a deployable AI SaaS product for company licensing, leasing, or customization'
+]
+},
   {
     id: 'lms-portal',
     title: 'LMS Portal (NCCCO)',

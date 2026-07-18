@@ -12,7 +12,10 @@ export default function Portfolio() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const container = document.querySelector(".isotope-container") as HTMLElement;
+    const container = document.querySelector(
+      ".isotope-container"
+    ) as HTMLElement;
+
     if (!container) return;
 
     const iso = new Isotope(container, {
@@ -47,75 +50,101 @@ export default function Portfolio() {
 
   return (
     <>
-    <Helmet>
-      <title>
-        {t("projects.seo.title")} | Mussadiq Ali
-      </title>
+      <Helmet>
+        <title>
+          {t("projects.seo.title")} | Mussadiq Ali
+        </title>
 
-      <meta
-        name="description"
-        content={t("projects.seo.description")}
-      />
+        <meta
+          name="description"
+          content={t("projects.seo.description")}
+        />
 
-      <meta
-        name="keywords"
-        content={t("projects.seo.keywords")}
-      />
+        <meta
+          name="keywords"
+          content={t("projects.seo.keywords")}
+        />
 
-      <link
-        rel="canonical"
-        href="https://mussadiq-ali-portfolio.vercel.app/#portfolio"
-      />
-    </Helmet>
+        <link
+          rel="canonical"
+          href="https://mussadiq-ali-portfolio.vercel.app/#portfolio"
+        />
+      </Helmet>
 
-    <section id="portfolio" className="portfolio-section">
-      <div className="container">
+      <section id="portfolio" className="portfolio-section">
+        <div className="container">
 
-        {/* ===== TITLE ===== */}
-        <div className="portfolio-title">
-          <h2>{t("projects.title")}</h2>
-          <p>{t("projects.subtitle")}</p>
+          {/* ===== TITLE ===== */}
+          <div className="portfolio-title">
+            <h2>{t("projects.title")}</h2>
+            <p>{t("projects.subtitle")}</p>
+          </div>
+
+          {/* ===== FILTERS ===== */}
+          <ul className="portfolio-filters">
+            <li data-filter="*" className="filter-active">
+              {t("projects.filters.all")}
+            </li>
+
+            <li data-filter=".backend">
+              {t("projects.filters.backend")}
+            </li>
+
+            <li data-filter=".fullstack">
+              {t("projects.filters.fullstack")}
+            </li>
+
+            <li data-filter=".ai">
+              {t("projects.filters.ai")}
+            </li>
+
+            <li data-filter=".enterprise">
+              {t("projects.filters.enterprise")}
+            </li>
+          </ul>
+
+          <div className="row isotope-container gy-4">
+            {projectsData.map((project) => (
+              <Project
+                key={project.id}
+                id={project.id}
+                img={project.image}
+                title={t(
+                  `projects.items.${project.id.replace(/-/g, "")}`,
+                  {
+                    defaultValue: project.title,
+                  }
+                )}
+                tech={project.technologies}
+                category={project.category}
+                noImage={project.noImage}
+              />
+            ))}
+          </div>
         </div>
-
-        {/* ===== FILTERS ===== */}
-        <ul className="portfolio-filters">
-          <li data-filter="*" className="filter-active">{t("projects.filters.all")}</li>
-          <li data-filter=".backend">{t("projects.filters.backend")}</li>
-          <li data-filter=".fullstack">{t("projects.filters.fullstack")}</li>
-          <li data-filter=".ai">{t("projects.filters.ai")}</li>
-          <li data-filter=".enterprise">{t("projects.filters.enterprise")}</li>
-        </ul>
-
-        <div className="row isotope-container gy-4">
-          {projectsData.map((project) => (
-            <Project
-              key={project.id}
-              id={project.id}
-              img={project.image}
-              title={t(`projects.items.${project.id.replace(/-/g, '')}`, {
-                defaultValue: project.title,
-              })}
-              tech={project.technologies}
-              category={project.category}
-              noImage={project.noImage}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
 
 /* ===== REUSABLE PROJECT CARD ===== */
-function Project({ id, img, title, tech, category, noImage }: {
+function Project({
+  id,
+  img,
+  title,
+  tech,
+  category,
+  noImage,
+}: {
   id: string;
-  img: string;
+  img: string | string[];
   title: string;
   tech: string;
   category: string;
   noImage?: boolean;
 }) {
+  const mainImage = Array.isArray(img) ? img[0] : img;
+
   return (
     <div className={`col-lg-4 col-md-6 portfolio-item ${category}`}>
       <div className="portfolio-content">
@@ -123,19 +152,28 @@ function Project({ id, img, title, tech, category, noImage }: {
         {noImage ? (
           <div className="portfolio-placeholder" />
         ) : (
-          <img src={`/assets/img/${img}`} />
+          <img
+            src={`/assets/img/${mainImage}`}
+            alt={title}
+          />
         )}
 
         <div className="portfolio-info">
           <h4>{title}</h4>
           <p>{tech}</p>
 
-          <Link to={`/projects/${id}`} className="details-link">
+          <Link
+            to={`/projects/${id}`}
+            className="details-link"
+          >
             <i className="bi bi-eye" />
           </Link>
 
           {!noImage && (
-            <a href={`/my-portfolio/assets/img/${img}`} className="glightbox">
+            <a
+              href={`/assets/img/${mainImage}`}
+              className="glightbox"
+            >
               <i className="bi bi-zoom-in" />
             </a>
           )}
