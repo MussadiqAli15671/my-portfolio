@@ -92,6 +92,33 @@ features: [
 'Designed as a deployable AI SaaS product for company licensing, leasing, or customization'
 ]
 },
+ {
+id: 'PairForgeAI',
+title: 'PairForgeAI — AI Pair Engineer',
+category: 'fullstack',
+image: ['pairforge.png', 'pairforge02.png', 'pairforge03.png'],
+technologies: 'Python · FastAPI · Angular · LangGraph · LangChain · OpenAI-Compatible LLM APIs · RAG · Qdrant · FastEmbed · PostgreSQL · SQLAlchemy · Redis · Docker · n8n · OAuth 2.0 · Gmail API · Google Calendar API · REST APIs · JWT · Fernet Encryption · httpx · Pydantic',
+
+description: `Built and deployed PairForgeAI, an AI Pair Engineer that works alongside developers to analyze code against engineering requirements and provide senior-level software engineering feedback.
+
+The system detects design flaws and engineering risks, recommends relevant tests, identifies practical refactoring opportunities, explains engineering trade-offs, and provides improved implementations when genuinely useful. It uses requirement-aware LLM reasoning to distinguish actual bugs from potential risks and avoids blindly recommending over-engineered solutions.
+
+Designed with a human-in-the-loop approach, PairForgeAI treats AI as an engineering partner rather than an autonomous code generator. The interface provides an engineering risk score and separates the review into Engineering Analysis, Design Risks, Test Suggestions, Refactoring, Trade-offs, and Improved Code.
+
+Deployed as a production-style Streamlit AI prototype using the Groq LLM API.
+
+Live Demo: https://go6datwawhft8tcemat8gt.streamlit.app/
+
+Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit
+
+Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud`,
+
+features: [
+'Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit'
+,
+'Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud'
+]
+},
   {
     id: 'lms-portal',
     title: 'LMS Portal (NCCCO)',
