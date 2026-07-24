@@ -52,6 +52,26 @@ Implemented Firebase notifications and JWT authentication.`,
       'Mobile app integration ready'
     ]
   },
+   {
+    id: 'fuzzy-app',
+    title: 'Drama Archive Search System — Information Retrieval System (IRS) --- Fuzzy Search (Minimum Edit Distance)',
+    category: 'fullstack',
+    image: 'FuzzySearch.png',
+    technologies: 'Python · FastAPI · Next.js · TypeScript · Information Retrieval · Levenshtein Distance · Fuzzy Search · Faceted Search · REST APIs',
+    description: `Developed an Information Retrieval System for Pakistani drama archives using fuzzy matching and tag-based retrieval techniques. Built a FastAPI backend with a Next.js + TypeScript frontend to enable approximate search, faceted filtering, and interactive exploration of drama metadata.
+
+Implemented a Levenshtein Edit Distance-based fuzzy search engine that ranks results by similarity across multiple attributes including title, actors, directors, writers, producers, categories, and years. Designed tag-based retrieval using faceted search concepts, allowing users to filter dramas dynamically through metadata attributes.
+
+The system demonstrates core IR concepts including approximate string matching, relevance ranking, similarity scoring, REST API design, and user-focused search interfaces. The architecture is designed to be scalable from in-memory storage to SQL/NoSQL-based indexing systems.
+
+   Demo: https://www.loom.com/share/c2064cd71c8743daad185dd184fd0043`,
+    features: [
+      'RESTful API architecture',
+      'Firebase authentication and database',
+      'Referral tracking and analytics',
+      'Mobile app integration ready'
+    ]
+  },
   {
     id: 'agentdeskai-gmail-events-automation',
     title: 'Secure Google Workspace Integration — OAuth, Gmail & Calendar Automation',
