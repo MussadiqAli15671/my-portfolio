@@ -151,6 +151,30 @@
 
       "exp1": {
         "role": "Full Stack Developer",
+        "duration": "Oct 2025 – Mar 2026",
+        "company": "KodersPoint",
+        "points": [
+          "Worked as a Full Stack Developer, contributing to the design, development, and deployment of multiple web applications from concept to production.",
+          "Developed responsive landing pages and full-stack applications using React, TypeScript, ASP.NET Core, Node.js, and SQL databases.",
+          "Built the backend of ScheduleBuddy using ASP.NET Core, implementing user plan creation, task management, and multi-role support for individuals, parents, and children.",
+          "Designed and implemented a parent-child collaboration system, enabling parents to create schedules, send requests, monitor shared plans, and manage linked accounts.",
+          "Implemented an advanced alarm and reminder system integrated with OneSignal, delivering real-time push notifications with custom reminder stages before scheduled events.",
+          "Developed real-time communication features using SignalR (WebSockets) for instant synchronization of schedules, tasks, and notifications across connected users.",
+          "Designed and developed scalable e-commerce modules, including product management, order processing, and administrative functionality.",
+          "Built a Story module supporting post creation, likes, and comments with normalized database schemas and optimized relational design.",
+          "Designed and implemented an administrative dashboard using React and TypeScript for system management, analytics, and operational monitoring.",
+          "Implemented a Refer & Earn platform using Stripe Connect with multi-account payment distribution, sandbox testing, and secure payment workflows.",
+          "Developed AI-powered solutions using LangChain, LangGraph, Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), OpenAI, Groq AI, and Hugging Face models.",
+          "Built intelligent AI features including sentiment analysis, zero-shot text classification, image classification, image caption generation, and LLM-powered automation workflows.",
+          "Worked with TensorFlow, PyTorch, and Keras to develop and integrate deep learning models into production-ready applications.",
+          "Integrated Generative AI capabilities into applications through prompt engineering, LLM integration, and AI-driven automation workflows.",
+          "Applied clean architecture principles, scalable backend design, secure API development, and performance optimization across full-stack projects."
+        ]        
+      },
+
+      "exp2": {
+
+"role": "Full Stack Developer",
         "duration": "Sep 2024 – Sep 2025",
         "company": "ASM Wiz LLC – Houston, Texas, USA",
         "points": [
@@ -170,11 +194,10 @@
   "Automated workflows using Power Apps and background jobs for tasks such as email notifications, quiz completion tracking, and system synchronization.",
   "Integrated LMS with WordPress using custom PHP-based webhooks for seamless data synchronization across platforms.",
   "Developed internal NCCCO modules for organizational management, improving operational efficiency for internal teams."
-        ]
+        ]       
       },
-
-      "exp2": {
-        "role": "Full Stack Engineer",
+      "exp3": {
+         "role": "Full Stack Engineer",
         "duration": "Jun 2022 – Jun 2023",
         "company": "GrowUp Tech Solutions – NIC Islamabad",
         "points": [
