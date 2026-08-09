@@ -110,7 +110,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="assets/MussadiqAli(Software and AI Developer).pdf"
+                href="assets/MussadiqAli_Software_and_AI_Developer.pdf"
                 download
                 className="hero-btn"
               >
