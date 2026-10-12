@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Isotope from "isotope-layout";
 import GLightbox from "glightbox";
 import imagesLoaded from "imagesloaded";
 import "./portfolio.css";
 import { Helmet } from "react-helmet-async";
 import { projectsData } from "../../data/projects";
+import type { ProjectCardProps } from "../../types/portfolio";
 
 export default function Portfolio() {
   const { t } = useTranslation();
@@ -135,19 +136,25 @@ function Project({
   tech,
   category,
   noImage,
-}: {
-  id: string;
-  img: string | string[];
-  title: string;
-  tech: string;
-  category: string;
-  noImage?: boolean;
-}) {
+}: ProjectCardProps) {
+  const navigate = useNavigate();
   const mainImage = Array.isArray(img) ? img[0] : img;
+
+  const handleCardClick = () => {
+    navigate(`/projects/${id}`);
+  };
 
   return (
     <div className={`col-lg-4 col-md-6 portfolio-item ${category}`}>
-      <div className="portfolio-content">
+      <div className="portfolio-content"
+        onClick={handleCardClick}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            navigate(`/projects/${id}`);
+          }
+        }}>
 
         {noImage ? (
           <div className="portfolio-placeholder" />
@@ -165,6 +172,7 @@ function Project({
           <Link
             to={`/projects/${id}`}
             className="details-link"
+            onClick={(e) => e.stopPropagation()}
           >
             <i className="bi bi-eye" />
           </Link>

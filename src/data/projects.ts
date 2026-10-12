@@ -1,17 +1,4 @@
-export interface ProjectData {
-  id: string;
-  title: string;
-  category: 'backend' | 'fullstack' | 'ai' | 'enterprise';
-  image: string | string[];
-  technologies: string;
-  description: string;
-  features: string[];
-  challenges?: string;
-  results?: string;
-  demoUrl?: string;
-  githubUrl?: string;
-  noImage?: boolean;
-}
+import type { ProjectData } from "../types/projects";
 
 export const projectsData: ProjectData[] = [
   {
@@ -19,6 +6,7 @@ export const projectsData: ProjectData[] = [
     title: 'MySchedule Buddy',
     category: 'backend',
     image: 'routineApp.jpg',
+    liveLink: 'https://play.google.com/store/apps/details?id=com.routine.routine_planner',
     technologies: '.NET Core • Stripe • SignalR • Hangfire • OneSignal • JWT Authentication • Backblaze B2 Cloud Storage • React TS • CI/CD Pipelines • MSSQL Server • Somee Hosting',
     description: `Developed backend APIs and designed the SQL Server database for a routine planning application.
 Built a Landing page and React-based admin dashboard for user management, analytics, and schedule monitoring.
@@ -39,6 +27,7 @@ Configured CI/CD pipelines and deployed frontend and backend to production.`,
     title: 'Refer App',
     category: 'backend',
     image: 'refer-app.jpg',
+    liveLink: '',
     technologies: '.NET Core API • Stripe(connected accounts, onboarding, payouts) • Firebase',
     description: `Developed secure backend APIs for a Flutter e-commerce application.
 Integrated Stripe payment gateway including connected accounts and payouts.
@@ -57,6 +46,7 @@ Implemented Firebase notifications and JWT authentication.`,
     title: 'Drama Archive Search System — Information Retrieval System (IRS) --- Fuzzy Search (Minimum Edit Distance)',
     category: 'fullstack',
     image: 'FuzzySearch.png',
+    liveLink: 'https://www.loom.com/share/c2064cd71c8743daad185dd184fd0043',
     technologies: 'Python · FastAPI · Next.js · TypeScript · Information Retrieval · Levenshtein Distance · Fuzzy Search · Faceted Search · REST APIs',
     description: `Developed an Information Retrieval System for Pakistani drama archives using fuzzy matching and tag-based retrieval techniques. Built a FastAPI backend with a Next.js + TypeScript frontend to enable approximate search, faceted filtering, and interactive exploration of drama metadata.
 
@@ -77,6 +67,7 @@ The system demonstrates core IR concepts including approximate string matching, 
     title: 'Secure Google Workspace Integration — OAuth, Gmail & Calendar Automation',
     category: 'fullstack',
     image: 'agentdeskemailcalendarautomation.png',
+    liveLink: 'https://drive.google.com/file/d/1Ei9fhx7E1d5_5Vg8UDGLVoFv3XIiziho/view?usp=drive_link',
     technologies: 'Python · FastAPI · Angular · OAuth 2.0 · Google APIs · Gmail API · Google Calendar API · REST APIs · PostgreSQL · SQLAlchemy · Fernet Encryption · JWT · httpx · Pydantic',
     description: `Built a secure Google Workspace integration layer for AgentDeskAI using OAuth 2.0 and Google's REST APIs. Users can connect their Google account through the official consent flow, while AgentDeskAI securely exchanges authorization codes for access and refresh tokens, encrypts credentials at rest, and automatically refreshes expired access tokens. The integration enables AI employees to interact with Gmail and Google Calendar on behalf of users, including reading emails, sending messages, retrieving upcoming events, and creating calendar events.`,
     features: [
@@ -87,65 +78,83 @@ The system demonstrates core IR concepts including approximate string matching, 
     ]
   },
   {
-id: 'AgentDeskAI — AI Employee Platform',
-title: 'AgentDeskAI — Multi-Tenant AI Employee Platform with AI Agents, Knowledge Search & Workflow Automation',
-category: 'fullstack',
-    image: ['agentDashboard.png', 'agentOpenAI.png', 'agentKB.png', 'agentSA.png'],
-technologies: 'Python · FastAPI · Angular · LangGraph · LangChain · OpenAI-Compatible LLM APIs · RAG · Qdrant · FastEmbed · PostgreSQL · SQLAlchemy · Redis · Docker · n8n · OAuth 2.0 · Gmail API · Google Calendar API · REST APIs · JWT · Fernet Encryption · httpx · Pydantic',
+  id: 'AgentDeskAI — AI Employee Platform',
+  title: 'AgentDeskAI — Multi-Tenant AI Employee Platform with AI Agents, Knowledge Search & Workflow Automation',
+  category: 'fullstack',
+      image: ['agentDashboard.png', 'agentOpenAI.png', 'agentKB.png', 'agentSA.png'],
+      liveLink: 'https://drive.google.com/file/d/1Ei9fhx7E1d5_5Vg8UDGLVoFv3XIiziho/view?usp=drive_link',
+  technologies: 'Python · FastAPI · Angular · LangGraph · LangChain · OpenAI-Compatible LLM APIs · RAG · Qdrant · FastEmbed · PostgreSQL · SQLAlchemy · Redis · Docker · n8n · OAuth 2.0 · Gmail API · Google Calendar API · REST APIs · JWT · Fernet Encryption · httpx · Pydantic',
 
-description: `Built AgentDeskAI as my own multi-tenant AI Employee SaaS platform designed for companies that want to automate knowledge-based support and repetitive business workflows. The platform enables organizations to create AI-powered employees that understand company documents through a RAG pipeline, make tool-based decisions using LangGraph agents, securely integrate with Google Workspace, and connect external automation workflows through n8n. I designed and implemented the platform from the ground up using FastAPI, Angular, PostgreSQL, Qdrant, Redis, Docker, and modern AI agent technologies. AgentDeskAI can be customized, licensed, or deployed for companies looking to automate internal support, document-based assistance, and business processes.`,
+  description: `Built AgentDeskAI as my own multi-tenant AI Employee SaaS platform designed for companies that want to automate knowledge-based support and repetitive business workflows. The platform enables organizations to create AI-powered employees that understand company documents through a RAG pipeline, make tool-based decisions using LangGraph agents, securely integrate with Google Workspace, and connect external automation workflows through n8n. I designed and implemented the platform from the ground up using FastAPI, Angular, PostgreSQL, Qdrant, Redis, Docker, and modern AI agent technologies. AgentDeskAI can be customized, licensed, or deployed for companies looking to automate internal support, document-based assistance, and business processes.`,
 
-features: [
-'Multi-tenant SaaS architecture with organization-level data isolation',
-'JWT authentication and secure user/organization management',
-'Document ingestion pipeline for PDF and DOCX files',
-'RAG-based knowledge base using document chunking, embeddings, and Qdrant semantic search',
-'AI Support Agent built with LangGraph ReAct architecture',
-'Tool-based agent decision making with visible reasoning and execution traces',
-'Organization-scoped knowledge retrieval to prevent cross-tenant data leakage',
-'Google Workspace integration using OAuth 2.0 and Google REST APIs',
-'Gmail and Google Calendar integration with encrypted tokens and automatic token refresh',
-'n8n workflow automation integration for external business processes',
-'Inbound and outbound workflow triggers with execution logs',
-'Automatic document-upload workflow events',
-'Dockerized backend, frontend, PostgreSQL, Redis, Qdrant, and n8n infrastructure',
-'Designed as a deployable AI SaaS product for company licensing, leasing, or customization'
-]
-},
- {
-id: 'PairForgeAI',
-title: 'PairForgeAI — AI Pair Engineer',
-category: 'fullstack',
-image: ['pairforge.png', 'pairforge02.png', 'pairforge03.png'],
-technologies: 'Python · FastAPI · Angular · LangGraph · LangChain · OpenAI-Compatible LLM APIs · RAG · Qdrant · FastEmbed · PostgreSQL · SQLAlchemy · Redis · Docker · n8n · OAuth 2.0 · Gmail API · Google Calendar API · REST APIs · JWT · Fernet Encryption · httpx · Pydantic',
+  features: [
+  'Multi-tenant SaaS architecture with organization-level data isolation',
+  'JWT authentication and secure user/organization management',
+  'Document ingestion pipeline for PDF and DOCX files',
+  'RAG-based knowledge base using document chunking, embeddings, and Qdrant semantic search',
+  'AI Support Agent built with LangGraph ReAct architecture',
+  'Tool-based agent decision making with visible reasoning and execution traces',
+  'Organization-scoped knowledge retrieval to prevent cross-tenant data leakage',
+  'Google Workspace integration using OAuth 2.0 and Google REST APIs',
+  'Gmail and Google Calendar integration with encrypted tokens and automatic token refresh',
+  'n8n workflow automation integration for external business processes',
+  'Inbound and outbound workflow triggers with execution logs',
+  'Automatic document-upload workflow events',
+  'Dockerized backend, frontend, PostgreSQL, Redis, Qdrant, and n8n infrastructure',
+  'Designed as a deployable AI SaaS product for company licensing, leasing, or customization'
+  ]
+  },
+  {
+  id: 'PairForgeAI',
+  title: 'PairForgeAI — AI Pair Engineer',
+  category: 'fullstack',
+  image: ['pairforge.png', 'pairforge02.png', 'pairforge03.png'],
+  liveLink: 'https://go6datwawhft8tcemat8gt.streamlit.app/',
+  technologies: 'Python · Streamlit · Groq API · Large Language Models (LLMs) · Prompt Engineering · Regular Expressions (Regex) · Git · GitHub · Streamlit Cloud',
 
-description: `Built and deployed PairForgeAI, an AI Pair Engineer that works alongside developers to analyze code against engineering requirements and provide senior-level software engineering feedback.
+  description: `Built and deployed PairForgeAI, an AI Pair Engineer that works alongside developers to analyze code against engineering requirements and provide senior-level software engineering feedback.
 
-The system detects design flaws and engineering risks, recommends relevant tests, identifies practical refactoring opportunities, explains engineering trade-offs, and provides improved implementations when genuinely useful. It uses requirement-aware LLM reasoning to distinguish actual bugs from potential risks and avoids blindly recommending over-engineered solutions.
+  The system detects design flaws and engineering risks, recommends relevant tests, identifies practical refactoring opportunities, explains engineering trade-offs, and provides improved implementations when genuinely useful. It uses requirement-aware LLM reasoning to distinguish actual bugs from potential risks and avoids blindly recommending over-engineered solutions.
 
-Designed with a human-in-the-loop approach, PairForgeAI treats AI as an engineering partner rather than an autonomous code generator. The interface provides an engineering risk score and separates the review into Engineering Analysis, Design Risks, Test Suggestions, Refactoring, Trade-offs, and Improved Code.
+  Designed with a human-in-the-loop approach, PairForgeAI treats AI as an engineering partner rather than an autonomous code generator. The interface provides an engineering risk score and separates the review into Engineering Analysis, Design Risks, Test Suggestions, Refactoring, Trade-offs, and Improved Code.
 
-Deployed as a production-style Streamlit AI prototype using the Groq LLM API.
+  Deployed as a production-style Streamlit AI prototype using the Groq LLM API.
 
-Live Demo: https://go6datwawhft8tcemat8gt.streamlit.app/
+  Live Demo: https://go6datwawhft8tcemat8gt.streamlit.app/
 
-Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit
+  Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit
 
-Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud`,
+  Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud`,
 
-features: [
-'Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit'
-,
-'Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud'
-]
+  features: [
+  'Skills: Artificial Intelligence (AI), Generative AI, Large Language Models (LLM), Prompt Engineering, Python, Software Engineering, Code Review, Software Architecture, AI Agents, Streamlit'
+  ,
+  'Technologies Used: Python, Streamlit, Groq API, Large Language Models (LLMs), Prompt Engineering, Regular Expressions (Regex), Git, GitHub, Streamlit Cloud'
+  ]
 },
   {
     id: 'lms-portal',
     title: 'LMS Portal (NCCCO)',
     category: 'fullstack',
     image: 'lms.jpg',
+    liveLink: 'https://dev1995-my.ccocert.org/',
     technologies: 'React TS • .NET Core',
     description: 'A learning management system for NCCCO certification programs.',
+    features: [
+      'Course management and enrollment',
+      'Interactive quizzes and assessments',
+      'Progress tracking and reporting',
+      'Admin dashboard for instructors'
+    ]
+  },
+  {
+    id: 'playwright-testing',
+    title: 'Black-Box Testing with Playwright – Course Registration Portal',
+    category: 'fullstack',
+    image: 'PlaywrightTesting.jpg',
+    liveLink: 'https://drive.google.com/file/d/1JBkciWNVGHFRcuzIgmg1Jh7iwR_2byfv/view?usp=sharing',
+    technologies: 'Python, Playwright, pytest, Black-Box Testing, Equivalence Partitioning, Boundary Value Analysis, Software Testing, Test Automation',
+    description: 'Designed and automated specification-driven black-box test cases for a Course Registration Portal using Equivalence Partitioning (EP), Boundary Value Analysis (BVA), and business-rule testing. Implemented automated browser tests using Python, Playwright, and pytest, analyzed test results, documented expected vs. actual behavior, and generated an HTML test report.',
     features: [
       'Course management and enrollment',
       'Interactive quizzes and assessments',
@@ -158,6 +167,7 @@ features: [
     title: 'MyCCCO System',
     category: 'fullstack',
     image: 'nccco.jpg',
+    liveLink: 'https://www.nccco.org/',
     technologies: '.NET Core Web API • React(Typescript) • CRM • Power Apps • Power Flows(Crone Jobs) • Microsoft Dataverse 365 • Php Webhooks',
     description: `Worked as a Full-Stack Developer on the NCCCO Certification Platform and Learning Management System (LMS).
 Developed RESTful APIs using ASP.NET Core and built responsive frontend modules with React and TypeScript.
@@ -171,6 +181,21 @@ Built and maintained Microsoft Power Apps workflows to automate business operati
       'Advanced reporting and analytics'
     ]
   },
+  {id: 'DecisionPRD',
+title: 'DecisionPRD — Decision-Aware Product Requirements Document Agent',
+category: 'ai',
+image: ['decisionprd.png', 'decisionprd02.png'],
+liveLink: 'https://app.joinsitrep.com/dashboard/marketplace/decisionprd--376ee791-74ad-437d-9974-0407fac0dc07',
+technologies: 'SitRep · No-Code AI · Generative AI · Large Language Models (LLMs) · AI Agents · Prompt Engineering · Requirements Engineering · Product Requirements Documents (PRDs)',
+description: `Built DecisionPRD, a no-code AI agent using SitRep as part of the Kaggle/SitRep AI Agent Hackathon in the No-Code Track. The agent transforms messy meeting discussions into implementation-ready Product Requirements Documents (PRDs).
+
+DecisionPRD explicitly separates confirmed decisions and requirements from assumptions, inferred requirements, missing information, and unresolved decisions, helping teams distinguish established requirements from information that still requires clarification.
+
+The agent generates traceable functional requirements, user stories, acceptance criteria, risks, dependencies, open questions, and an implementation-readiness assessment. Designed with a decision-aware approach, DecisionPRD improves requirements clarity, traceability, and implementation readiness while reducing ambiguity before development begins.
+
+Skills: Artificial Intelligence (AI), Generative AI, AI Agents, Prompt Engineering, Requirements Engineering, Product Management, Software Requirements Analysis, Decision Analysis, No-Code AI, PRD Generation`,
+features: ['Skills: Artificial Intelligence (AI), Generative AI, AI Agents, Prompt Engineering, Requirements Engineering, Product Management, Software Requirements Analysis, Decision Analysis, No-Code AI, PRD Generation','Technologies Used: SitRep, No-Code AI, Generative AI, Large Language Models (LLMs), AI Agents, Prompt Engineering, Requirements Engineering']
+ },
   {
     id: 'lms-admin',
     title: 'LMS Admin (NCCCO)',
