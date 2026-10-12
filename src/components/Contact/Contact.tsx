@@ -1,26 +1,45 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { useSendPortfolioEmail } from "../../hooks";
+import type {
+  ContactInfoItemProps,
+  ContactInputProps,
+  PortfolioEmailRequest,
+} from "../../types/contact";
 import "./contact.css";
 
 export default function Contact() {
   const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement>(null);
+  const { submit, isLoading } = useSendPortfolioEmail();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!formRef.current) return;
+    const form = formRef.current;
+    if (!form) return;
 
     try {
-      await emailjs.sendForm(
-        "service_ks0442q",
-        "template_c2bptj9",
-        formRef.current,
-        "Vsm1dRzDSMYykUb2f"
-      );
+      const formData = new FormData(form);
+      const name = String(formData.get("name") ?? "").trim();
+      const email = String(formData.get("email") ?? "").trim();
+      const subject = String(formData.get("subject") ?? "").trim();
+      const message = String(formData.get("message") ?? "").trim();
+
+      if (!name || !email) {
+        throw new Error("Name and email are required.");
+      }
+
+      const request: PortfolioEmailRequest = {
+        name,
+        email,
+        ...(subject && { subject }),
+        ...(message && { message }),
+      };
+
+      await submit(request);
 
       Swal.fire({
         title: t("contact.alert.successTitle"),
@@ -30,7 +49,7 @@ export default function Contact() {
         timer: 2000,
       });
 
-      formRef.current.reset();
+      form.reset();
     } catch {
       Swal.fire(
         t("contact.alert.errorTitle"),
@@ -129,9 +148,9 @@ export default function Contact() {
               <form ref={formRef} onSubmit={handleSubmit} className="php-email-form">
                 <div className="row gy-4">
 
-                  <Input label={t("contact.form.name")} name="name" />
-                  <Input label={t("contact.form.email")} name="email" type="email" />
-                  <Input label={t("contact.form.subject")} name="subject" />
+                  <Input label={t("contact.form.name")} name="name" maxLength={200} />
+                  <Input label={t("contact.form.email")} name="email" type="email" maxLength={254} />
+                  <Input label={t("contact.form.subject")} name="subject" maxLength={200} required={false} />
 
                   <div className="col-md-12">
                     <label>{t("contact.form.message")}</label>
@@ -139,19 +158,13 @@ export default function Contact() {
                       name="message"
                       rows={8}
                       className="form-control"
-                      required
+                      maxLength={10000}
                     />
                   </div>
 
-                  <input
-                    type="hidden"
-                    name="time"
-                    value={new Date().toLocaleString()}
-                  />
-
                   <div className="col-md-12 text-center">
-                    <button type="submit">
-                      {t("contact.form.submit")}
+                    <button type="submit" disabled={isLoading}>
+                      {isLoading ? t("contact.form.submit") : t("contact.form.submit")}
                     </button>
                   </div>
 
@@ -183,13 +196,7 @@ export default function Contact() {
 
 /* ===== REUSABLE COMPONENTS ===== */
 
-interface InfoItemProps {
-  icon: string;
-  label: string;
-  value: string | React.ReactNode;
-}
-
-function InfoItem({ icon, label, value }: InfoItemProps) {
+function InfoItem({ icon, label, value }: ContactInfoItemProps) {
   return (
     <div className="info-item d-flex">
       <i className={`bi ${icon}`} />
@@ -201,17 +208,23 @@ function InfoItem({ icon, label, value }: InfoItemProps) {
   );
 }
 
-interface InputProps {
-  label: string;
-  name: string;
-  type?: string;
-}
-
-function Input({ label, name, type = "text" }: InputProps) {
+function Input({
+  label,
+  name,
+  type = "text",
+  maxLength,
+  required = true,
+}: ContactInputProps) {
   return (
     <div className="col-md-6">
       <label>{label}</label>
-      <input type={type} name={name} className="form-control" required />
+      <input
+        type={type}
+        name={name}
+        className="form-control"
+        maxLength={maxLength}
+        required={required}
+      />
     </div>
   );
 }

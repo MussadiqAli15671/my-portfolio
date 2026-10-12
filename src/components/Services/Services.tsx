@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import type { ServiceCardProps } from "../../types/services";
 import "./services.css";
 
 export default function Services() {
@@ -115,12 +116,7 @@ function Service({
   title,
   desc,
   delay = 0
-}: {
-  icon: string;
-  title: string;
-  desc: string;
-  delay?: number;
-}) {
+}: ServiceCardProps) {
   return (
     <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={delay}>
       <div className="service-item d-flex">

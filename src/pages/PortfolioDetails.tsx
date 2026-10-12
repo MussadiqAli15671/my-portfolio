@@ -86,17 +86,17 @@ export default function PortfolioDetails() {
                   </p>
                 </div>
 
-                {project.demoUrl && (
+                {project.liveLink && (
                   <a
-                    href={project.demoUrl}
+                    href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary me-2"
                   >
-                    <i className="bi bi-eye me-2"></i>
-                    View Demo
+                    <i className="bi bi-box-arrow-up-right me-2"></i>
+                    Live Demo
                   </a>
-                )}
+                )}                
 
                 {project.githubUrl && (
                   <a

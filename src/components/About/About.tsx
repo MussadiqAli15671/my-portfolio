@@ -49,6 +49,25 @@ export default function About() {
               <p>{t("about.para2")}</p>
               <p>{t("about.para3")}</p>
 
+              {/* ## Professional Profile
+
+My name is **Mussadiq Ali**, and I am a **Full-Stack & AI Developer** with a strong academic background in Computer Science. I completed my **MPhil in Computer Science with a 3.93/4.00 GPA** and my **Bachelor’s degree in Computer Science as a Gold Medalist**.
+
+I have extensive experience in developing and delivering software throughout its complete lifecycle—from **gathering and analyzing client requirements** and converting them into technical specifications to **system architecture, database design, frontend and backend development, AI/ML integration, payment gateway integration, testing, CI/CD pipeline development, DevOps practices, and production deployment**.
+
+I have worked on **highly scalable SaaS, ERP, complex analytical, and multi-tenant systems** for organizations based in **Pakistan and the USA**. I have experience developing applications from scratch, where I design the overall architecture, establish separation of concerns, create reusable components, develop business-logic and repository layers, design database schemas and ERDs, and build maintainable frontend and backend systems.
+
+I have also worked extensively with **existing and legacy systems**, where my responsibilities included resolving bugs, implementing enhancement requests, improving application performance, optimizing database queries, addressing issues such as **N+1 queries**, debugging and profiling applications, and upgrading legacy technologies to modern frameworks. For example, I have worked on migrations such as **ADO.NET/WebForms applications to .NET 8 with Entity Framework** and modernization of older **Flask applications into modular Django-based systems**.
+
+My core technical expertise includes **Python, .NET Core, React.js, TypeScript, SQL, NoSQL databases, vector databases, RAG, AI agents, Machine Learning, Deep Learning, and LLM-based applications**. Over the past few years, I have increasingly specialized in **backend engineering and AI engineering**, particularly in building intelligent applications using modern AI and LLM technologies.
+
+I have experience not only integrating AI services but also **developing and training Machine Learning and Deep Learning models**, integrating LLMs into applications, building **RAG pipelines and AI agents**, and incorporating AI-driven solutions into production software.
+
+My two most recent and impactful projects are **MySchedule Buddy** and **AI AgentDesk**, where I have worked extensively on backend architecture, AI integrations, intelligent agents, and scalable application development.
+
+I am currently open to **full-time, part-time, and contract-based opportunities**, as well as opportunities in **AI research and applied AI engineering**. */}
+
+
               {/* INFO LIST */}
               <div className="row mt-4">
 
